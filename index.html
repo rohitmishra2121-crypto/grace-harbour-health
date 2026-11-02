@@ -200,40 +200,40 @@
 
     <!-- ══════════════════════════════════════════════
          HERO SECTION
-         - Edge-to-edge right side photo taking ~52-54% desktop width
-         - High-contrast, spacious left column (~46-48%)
-         - Kitchen tea photo with faces clearly visible
+         - Replaced photo with warm in-home scene (tea/kitchen table)
+         - Left-aligned text on mobile
+         - Hero review badge stacked cleanly below photo on small screens
          - Laura M. quote matches testimonial
     ══════════════════════════════════════════════ -->
-    <section class="relative bg-gradient-to-b from-linen to-white py-12 lg:py-0 overflow-hidden">
+    <section class="relative bg-gradient-to-b from-linen to-white py-14 lg:py-20 overflow-hidden">
       <!-- Decorative Backdrop Circles -->
-      <div class="absolute top-0 right-1/3 w-96 h-96 bg-sage-100/40 rounded-full blur-3xl -z-10"></div>
-      <div class="absolute bottom-0 left-0 w-80 h-80 bg-harbour-100/40 rounded-full blur-3xl -z-10"></div>
+      <div class="absolute top-0 right-0 w-96 h-96 bg-sage-100/50 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-harbour-100/40 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center min-h-[560px] lg:min-h-[640px]">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
-          <!-- Hero Copy: Left Column (~46-48% on desktop) -->
-          <div class="lg:col-span-6 xl:col-span-6 space-y-6 text-left py-8 lg:py-20 lg:pr-6 z-10">
+          <!-- Hero Copy: Left-aligned on mobile and desktop -->
+          <div class="lg:col-span-7 space-y-6 text-left">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-sage-300 shadow-xs text-xs sm:text-sm font-bold text-sage-800">
               <span class="w-2.5 h-2.5 rounded-full bg-sage"></span>
               Dedicated In-Home Senior Care Across Nova Scotia
             </div>
 
-            <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-harbour font-bold tracking-tight leading-[1.15]">
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-harbour font-bold tracking-tight leading-[1.15]">
               Compassionate Care.<br />
               <span class="text-sage italic">True Dignity</span> at Home.
             </h1>
 
-            <p class="font-sans text-base sm:text-lg text-slate-700 max-w-xl leading-relaxed">
+            <p class="font-sans text-base sm:text-lg text-slate-700 max-w-2xl leading-relaxed">
               When aging relatives need assistance, home remains their greatest sanctuary. Grace Harbour matches vetted, empathetic caregivers to provide personal care, warm companionship, and post-recovery support—giving your family complete peace of mind.
             </p>
 
             <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-3.5 pt-2">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4 pt-2">
               <a
                 href="#assessment"
-                class="text-center px-7 py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
+                class="text-center px-8 py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2 group"
               >
                 <span>Schedule Free In-Home Assessment</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
@@ -241,7 +241,7 @@
 
               <a
                 href="tel:6043794810"
-                class="text-center px-5 py-4 rounded-xl bg-white hover:bg-linen border border-gray-300 text-harbour font-bold text-base shadow-xs transition-colors flex items-center justify-center gap-2.5 whitespace-nowrap"
+                class="text-center px-6 py-4 rounded-xl bg-white hover:bg-linen border border-gray-300 text-harbour font-bold text-base shadow-xs transition-colors flex items-center justify-center gap-2.5"
               >
                 <div class="w-7 h-7 rounded-full bg-sage-50 text-sage flex items-center justify-center">
                   <i data-lucide="phone" class="w-4 h-4"></i>
@@ -250,15 +250,15 @@
               </a>
             </div>
 
-            <!-- Trust Pills: 14px secondary text -->
-            <div class="pt-6 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm font-semibold text-slate-700">
+            <!-- Trust Pills: 14px secondary text for senior accessibility -->
+            <div class="pt-6 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-semibold text-slate-700">
               <div class="flex items-center gap-2">
                 <i data-lucide="shield-check" class="w-4 h-4 text-sage flex-shrink-0"></i>
-                <span>100% Vetted</span>
+                <span>100% Vetted & Bonded</span>
               </div>
               <div class="flex items-center gap-2">
                 <i data-lucide="clipboard-list" class="w-4 h-4 text-sage flex-shrink-0"></i>
-                <span>Custom Plans</span>
+                <span>Custom Care Plans</span>
               </div>
               <div class="flex items-center gap-2">
                 <i data-lucide="clock" class="w-4 h-4 text-sage flex-shrink-0"></i>
@@ -266,72 +266,61 @@
               </div>
               <div class="flex items-center gap-2">
                 <i data-lucide="sparkles" class="w-4 h-4 text-sage flex-shrink-0"></i>
-                <span>Local NS Care</span>
+                <span>Nova Scotia Roots</span>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
+          <!-- Hero Image & Badge (Stacked cleanly on mobile, no overlapping quote text) -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Main Photo Card: Warm in-home scene (tea at kitchen table from client site) -->
+              <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-white bg-linen">
+                <img
+                  src="images/hero-caregiver-senior-tea.webp"
+                  alt="Grace Harbour caregiver sharing tea with a smiling senior in her kitchen"
+                  class="w-full h-[420px] sm:h-[460px] object-cover object-[50%_15%]"
+                  loading="eager"
+                />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-harbour/90 via-harbour/30 to-transparent p-5 sm:p-6 text-white">
+                  <span class="inline-block px-3 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-semibold mb-1 uppercase tracking-wide">
+                    Personalized In-Home Support
+                  </span>
+                  <div class="font-serif text-lg sm:text-xl font-bold leading-snug">
+                    "Where care meets compassion — and home remains home."
+                  </div>
+                </div>
+              </div>
 
-      <!-- Hero Image: Edge-to-Edge Right Side on Desktop (takes ~52-54% width) -->
-      <div class="lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:w-[52%] xl:w-[54%] w-full mt-6 lg:mt-0 px-4 sm:px-6 lg:px-0">
-        <div class="relative h-[440px] sm:h-[520px] lg:h-full w-full rounded-2xl lg:rounded-none lg:rounded-l-3xl overflow-hidden shadow-card border-4 border-white lg:border-y-0 lg:border-r-0 lg:border-l-4">
-          <img
-            src="images/hero-caregiver-senior-tea.webp"
-            alt="Grace Harbour caregiver sharing tea with a smiling senior in her kitchen"
-            class="w-full h-full object-cover object-[50%_15%]"
-            loading="eager"
-          />
-          
-          <!-- Soft Gradient Overlays for Text & Contrast -->
-          <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-linen/20 lg:via-transparent lg:to-transparent"></div>
-          
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-harbour/95 via-harbour/40 to-transparent p-6 text-white">
-            <span class="inline-block px-3 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-semibold mb-1.5 uppercase tracking-wide">
-              Personalized In-Home Support
-            </span>
-            <div class="font-serif text-lg sm:text-xl font-bold leading-snug max-w-md">
-              "Where care meets compassion — and home remains home."
+              <!-- Floating Trust Badge (Bonded Caregivers) -->
+              <div class="hidden sm:flex absolute -top-4 -left-4 bg-white p-3.5 rounded-xl shadow-lg border border-gray-100 items-center gap-3 z-10">
+                <div class="w-10 h-10 rounded-lg bg-sage/10 text-sage flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="award" class="w-5 h-5 text-sage"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-harbour">Registered & Bonded</div>
+                  <div class="text-xs text-slate-600">Certified Care Professionals</div>
+                </div>
+              </div>
+
+              <!-- Review Card: STACKED below image on small screens (< 640px) to prevent overlapping caption -->
+              <!-- Name made consistent with Testimonials (Laura M., Dartmouth) -->
+              <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-right-6 bg-white p-4 rounded-xl shadow-lg border border-gray-200 max-w-xs ml-auto z-10">
+                <div class="flex items-center gap-1 text-amber-500 mb-1.5">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <div class="text-sm font-bold text-gray-900 leading-snug">"Grace Harbour gave our family our lives back."</div>
+                <div class="text-xs text-slate-600 mt-1 font-medium">— Laura M., Dartmouth (Post-hospital care)</div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Floating Trust Badge (Bonded Caregivers) -->
-          <div class="hidden sm:flex absolute top-6 left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-xl shadow-lg border border-gray-100 items-center gap-3 z-10">
-            <div class="w-10 h-10 rounded-lg bg-sage/10 text-sage flex items-center justify-center flex-shrink-0">
-              <i data-lucide="award" class="w-5 h-5 text-sage"></i>
-            </div>
-            <div>
-              <div class="text-sm font-bold text-harbour">Registered & Bonded</div>
-              <div class="text-xs text-slate-600">Certified Care Professionals</div>
-            </div>
-          </div>
-
-          <!-- Review Card (Laura M., Dartmouth) -->
-          <div class="hidden sm:block absolute bottom-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-gray-200 max-w-xs z-10">
-            <div class="flex items-center gap-1 text-amber-500 mb-1.5">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <div class="text-sm font-bold text-gray-900 leading-snug">"Grace Harbour gave our family our lives back."</div>
-            <div class="text-xs text-slate-600 mt-1 font-medium">— Laura M., Dartmouth (Post-hospital care)</div>
-          </div>
-        </div>
-
-        <!-- Mobile-Only Review Card (Stacked below image) -->
-        <div class="sm:hidden mt-4 bg-white p-4 rounded-xl shadow-md border border-gray-200">
-          <div class="flex items-center gap-1 text-amber-500 mb-1.5">
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-          </div>
-          <div class="text-sm font-bold text-gray-900 leading-snug">"Grace Harbour gave our family our lives back."</div>
-          <div class="text-xs text-slate-600 mt-1 font-medium">— Laura M., Dartmouth (Post-hospital care)</div>
         </div>
       </div>
     </section>
@@ -786,32 +775,49 @@
             </div>
           </div>
 
-          <!-- Stats Grid -->
-          <div class="lg:col-span-6">
+          <!-- Stats Grid & Walker Support Photo -->
+          <div class="lg:col-span-6 space-y-6">
+            <!-- Walker Support Photo from client website -->
+            <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-harbour-700 bg-harbour-800">
+              <img
+                src="images/caregiver-walker-support.webp"
+                alt="Caregiver supporting a senior walking safely with a walker at home"
+                class="w-full h-56 sm:h-64 object-cover object-center"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-harbour-900/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="inline-block px-2.5 py-0.5 rounded bg-sage/80 text-xs font-semibold uppercase tracking-wider mb-1">
+                  Active Independence
+                </span>
+                <div class="font-serif font-bold text-base sm:text-lg">Caregiver supporting a senior walking safely at home.</div>
+              </div>
+            </div>
+
             <div class="grid grid-cols-2 gap-4 sm:gap-6">
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-coral">100%</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Vetted & Insured</div>
-                <p class="text-sm text-slate-300">Complete background checks & liability coverage.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-3xl sm:text-4xl font-bold text-coral">100%</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Vetted & Insured</div>
+                <p class="text-xs text-slate-300">Complete background checks & liability coverage.</p>
               </div>
 
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-sage-200">24/7</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Coordination</div>
-                <p class="text-sm text-slate-300">Day, evening, overnight & weekend shifts available.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-3xl sm:text-4xl font-bold text-sage-200">24/7</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Coordination</div>
+                <p class="text-xs text-slate-300">Day, evening, overnight & weekend shifts available.</p>
               </div>
 
               <!-- Changed from "0" to "No Contracts" as requested -->
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-2xl sm:text-3xl font-bold text-white pt-2 sm:pt-3">No Contracts</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Total Flexibility</div>
-                <p class="text-sm text-slate-300">Zero long-term contracts; pause or adapt anytime.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-2xl sm:text-3xl font-bold text-white pt-1">No Contracts</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Total Flexibility</div>
+                <p class="text-xs text-slate-300">Zero long-term contracts; pause or adapt anytime.</p>
               </div>
 
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-coral">48h</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Fast Placement</div>
-                <p class="text-sm text-slate-300">Prompt turnaround for urgent discharge recovery.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-3xl sm:text-4xl font-bold text-coral">48h</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Fast Placement</div>
+                <p class="text-xs text-slate-300">Prompt turnaround for urgent discharge recovery.</p>
               </div>
             </div>
           </div>
@@ -880,48 +886,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════
-         FULL-WIDTH PHOTO BAND: "FAMILIAR FACES. EVERY VISIT."
-         - Height: ~420px desktop / ~260px mobile
-         - Dark gradient overlay on the left
-         - Headline + small "Book Free Assessment" button
-    ══════════════════════════════════════════════ -->
-    <section class="relative w-full h-[260px] sm:h-[340px] lg:h-[420px] overflow-hidden">
-      <!-- Full-Width Background Image -->
-      <img
-        src="images/caregiver-walker-support.webp"
-        alt="Caregiver supporting a senior walking safely at home"
-        class="w-full h-full object-cover object-[center_35%]"
-        loading="lazy"
-      />
-
-      <!-- Dark Gradient Overlay (emphasized on left for clear text legibility) -->
-      <div class="absolute inset-0 bg-gradient-to-r from-harbour-950/90 via-harbour-900/60 to-transparent"></div>
-
-      <!-- Text and CTA Container -->
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
-          <div class="max-w-xl space-y-4 text-left">
-            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
-              Familiar faces. Every visit.
-            </h2>
-            <p class="text-sm sm:text-base text-slate-200 leading-relaxed max-w-md">
-              Consistent, compassionate care from caregivers who truly get to know your loved one.
-            </p>
-            <div class="pt-2">
-              <a
-                href="#assessment"
-                class="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-sm sm:text-base shadow-soft hover:shadow-glow transition-all"
-              >
-                <i data-lucide="calendar" class="w-4 h-4"></i>
-                <span>Book Free Assessment</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
