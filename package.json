@@ -1,0 +1,12 @@
+{
+  "name": "grace-harbour-health",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Grace Harbour Home Health - Compassionate In-Home Care Services in Nova Scotia, Canada",
+  "scripts": {
+    "dev": "node serve.js",
+    "start": "node serve.js",
+    "build": "echo 'Static site ready'"
+  }
+}
+
