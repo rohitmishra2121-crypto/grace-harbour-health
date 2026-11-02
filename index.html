@@ -275,18 +275,16 @@
           <div class="lg:col-span-5">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               
-              <!-- Main Photo Card: Warm in-home scene (tea at kitchen table) -->
-              <!-- PLACEHOLDER HERO IMAGE: Replace with actual client photo -->
+              <!-- Main Photo Card: Warm in-home scene (tea at kitchen table from client site) -->
               <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-white bg-linen">
                 <img
-                  src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=900&q=80"
-                  alt="Compassionate caregiver and smiling senior enjoying conversation over tea at kitchen table"
-                  class="w-full h-[420px] sm:h-[460px] object-cover"
+                  src="images/hero-caregiver-senior-tea.webp"
+                  alt="Grace Harbour caregiver sharing tea with a smiling senior in her kitchen"
+                  class="w-full h-[420px] sm:h-[460px] object-cover object-[50%_15%]"
                   loading="eager"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
-                <div class="absolute bottom-6 left-6 right-6 text-white">
-                  <span class="inline-block px-3 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-semibold mb-1.5 uppercase tracking-wide">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-harbour/90 via-harbour/30 to-transparent p-5 sm:p-6 text-white">
+                  <span class="inline-block px-3 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-semibold mb-1 uppercase tracking-wide">
                     Personalized In-Home Support
                   </span>
                   <div class="font-serif text-lg sm:text-xl font-bold leading-snug">
@@ -296,7 +294,7 @@
               </div>
 
               <!-- Floating Trust Badge (Bonded Caregivers) -->
-              <div class="hidden sm:flex absolute -top-4 -left-4 bg-white p-3.5 rounded-xl shadow-lg border border-gray-100 items-center gap-3">
+              <div class="hidden sm:flex absolute -top-4 -left-4 bg-white p-3.5 rounded-xl shadow-lg border border-gray-100 items-center gap-3 z-10">
                 <div class="w-10 h-10 rounded-lg bg-sage/10 text-sage flex items-center justify-center flex-shrink-0">
                   <i data-lucide="award" class="w-5 h-5 text-sage"></i>
                 </div>
@@ -308,7 +306,7 @@
 
               <!-- Review Card: STACKED below image on small screens (< 640px) to prevent overlapping caption -->
               <!-- Name made consistent with Testimonials (Laura M., Dartmouth) -->
-              <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-right-6 bg-white p-4 rounded-xl shadow-lg border border-gray-200 max-w-xs ml-auto">
+              <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-right-6 bg-white p-4 rounded-xl shadow-lg border border-gray-200 max-w-xs ml-auto z-10">
                 <div class="flex items-center gap-1 text-amber-500 mb-1.5">
                   <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                   <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -633,13 +631,13 @@
         <div class="grid lg:grid-cols-12 gap-8 items-center mb-12">
           
           <!-- Supporting Photo: Coordinator Home Visit (4 cols) -->
-          <!-- PLACEHOLDER IMAGE: Coordinator on in-home consultation -->
+          <!-- In-Home Consultation Photo from client website -->
           <div class="lg:col-span-4">
             <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-linen bg-linen">
               <img
-                src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
-                alt="Grace Harbour care coordinator conducting an in-home assessment visit with a senior and family"
-                class="w-full h-80 lg:h-[480px] object-cover"
+                src="images/consultation-care-plan.webp"
+                alt="Grace Harbour care coordinator reviewing a care plan with a senior at home"
+                class="w-full h-80 lg:h-[480px] object-cover object-center"
                 loading="lazy"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-harbour/75 via-transparent to-transparent"></div>
@@ -777,32 +775,49 @@
             </div>
           </div>
 
-          <!-- Stats Grid ("No Contracts" as words instead of "0") -->
-          <div class="lg:col-span-6">
+          <!-- Stats Grid & Walker Support Photo -->
+          <div class="lg:col-span-6 space-y-6">
+            <!-- Walker Support Photo from client website -->
+            <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-harbour-700 bg-harbour-800">
+              <img
+                src="images/caregiver-walker-support.webp"
+                alt="Caregiver supporting a senior walking safely with a walker at home"
+                class="w-full h-56 sm:h-64 object-cover object-center"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-harbour-900/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="inline-block px-2.5 py-0.5 rounded bg-sage/80 text-xs font-semibold uppercase tracking-wider mb-1">
+                  Active Independence
+                </span>
+                <div class="font-serif font-bold text-base sm:text-lg">Caregiver supporting a senior walking safely at home.</div>
+              </div>
+            </div>
+
             <div class="grid grid-cols-2 gap-4 sm:gap-6">
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-coral">100%</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Vetted & Insured</div>
-                <p class="text-sm text-slate-300">Complete background checks & liability coverage.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-3xl sm:text-4xl font-bold text-coral">100%</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Vetted & Insured</div>
+                <p class="text-xs text-slate-300">Complete background checks & liability coverage.</p>
               </div>
 
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-sage-200">24/7</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Coordination</div>
-                <p class="text-sm text-slate-300">Day, evening, overnight & weekend shifts available.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-3xl sm:text-4xl font-bold text-sage-200">24/7</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Coordination</div>
+                <p class="text-xs text-slate-300">Day, evening, overnight & weekend shifts available.</p>
               </div>
 
               <!-- Changed from "0" to "No Contracts" as requested -->
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-2xl sm:text-3xl font-bold text-white pt-2 sm:pt-3">No Contracts</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Total Flexibility</div>
-                <p class="text-sm text-slate-300">Zero long-term contracts; pause or adapt anytime.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-2xl sm:text-3xl font-bold text-white pt-1">No Contracts</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Total Flexibility</div>
+                <p class="text-xs text-slate-300">Zero long-term contracts; pause or adapt anytime.</p>
               </div>
 
-              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-coral">48h</div>
-                <div class="text-sm font-bold text-white uppercase tracking-wider">Fast Placement</div>
-                <p class="text-sm text-slate-300">Prompt turnaround for urgent discharge recovery.</p>
+              <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-5 text-center space-y-1.5">
+                <div class="font-serif text-3xl sm:text-4xl font-bold text-coral">48h</div>
+                <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Fast Placement</div>
+                <p class="text-xs text-slate-300">Prompt turnaround for urgent discharge recovery.</p>
               </div>
             </div>
           </div>
