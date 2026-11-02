@@ -17,7 +17,7 @@
       property="og:description"
       content="Canada's trusted home care provider. Vetted caregivers, personalized care plans, and true peace of mind for families."
     />
-    <meta property="og:url" content="https://www.graceharbourhealth.ca/" />
+    <meta property="og:url" content="https://rohitmishra2121-crypto.github.io/grace-harbour-health/" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,40 +87,30 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
     <style>
-      /* Smooth transitions and custom touches */
       .bg-pattern {
         background-color: #faf8f5;
         background-image: radial-gradient(#12384f0a 1px, transparent 1px);
         background-size: 24px 24px;
       }
-      .badge-shimmer {
-        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
-        background-size: 200% 100%;
-        animation: shimmer 3s infinite;
-      }
-      @keyframes shimmer {
-        0% { background-position: -200% 0; }
-        100% { background-position: 200% 0; }
-      }
     </style>
   </head>
 
-  <body class="font-sans text-gray-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
+  <body class="font-sans text-slate-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
     <!-- ══════════════════════════════════════════════
-         TOP ANNOUNCEMENT BAR
+         TOP ANNOUNCEMENT BAR (PHONE NUMBER LIVES HERE)
     ══════════════════════════════════════════════ -->
-    <div class="bg-harbour text-white text-xs sm:text-sm py-2 px-4 border-b border-harbour-600/40">
+    <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
-          <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-sage-600/30 text-sage-200 text-xs font-medium border border-sage-600/40">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sage-600/40 text-sage-100 text-xs font-semibold border border-sage-500/50">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             Nova Scotia In-Home Care
           </span>
-          <span class="text-gray-300 hidden md:inline">Accepting New Clients • Free In-Home Consultation</span>
+          <span class="text-slate-200 hidden md:inline text-sm">Accepting New Clients • Free In-Home Consultation</span>
         </div>
-        <div class="flex items-center gap-4 text-xs font-medium">
-          <a href="tel:6043794810" class="flex items-center gap-1.5 text-white hover:text-coral transition-colors">
-            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-coral"></i>
+        <div class="flex items-center gap-4 text-sm font-medium">
+          <a href="tel:6043794810" class="flex items-center gap-2 text-white hover:text-coral transition-colors font-semibold">
+            <i data-lucide="phone-call" class="w-4 h-4 text-coral"></i>
             <span>Call Our Care Team: <strong>(604) 379-4810</strong></span>
           </a>
           <span class="text-white/20 hidden sm:inline">|</span>
@@ -133,128 +123,47 @@
 
     <!-- ══════════════════════════════════════════════
          STICKY NAVIGATION HEADER
+         (Reduced to 5 nowrap links, no duplicate phone, clean hamburger < 1100px)
     ══════════════════════════════════════════════ -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
-          <a href="#" class="flex items-center gap-3 group">
+          <a href="#" class="flex items-center gap-3 group flex-shrink-0">
             <div class="w-11 h-11 rounded-xl bg-harbour text-white flex items-center justify-center shadow-md group-hover:bg-sage transition-colors">
               <i data-lucide="heart-handshake" class="w-6 h-6 text-coral"></i>
             </div>
             <div>
               <span class="font-serif text-2xl font-bold tracking-tight text-harbour block leading-none">Grace Harbour</span>
-              <span class="text-[11px] font-sans font-semibold tracking-wider text-sage uppercase mt-0.5 block">Home Health</span>
+              <span class="text-xs font-sans font-bold tracking-wider text-sage-800 uppercase mt-0.5 block">Home Health</span>
             </div>
           </a>
 
-          <!-- Desktop Navigation -->
-          <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
-            <!-- Services Dropdown -->
-            <div class="relative group">
-              <button
-                type="button"
-                class="flex items-center gap-1.5 py-2 text-gray-700 hover:text-harbour font-medium transition-colors group-hover:text-harbour"
-              >
-                <span>Care Services</span>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 group-hover:rotate-180 transition-transform"></i>
-              </button>
-
-              <!-- Dropdown Menu -->
-              <div class="absolute left-0 top-full pt-2 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-1 group-hover:translate-y-0 transition-all duration-200 z-50">
-                <div class="bg-white rounded-xl shadow-card border border-gray-100 p-2 ring-1 ring-black/5 divide-y divide-gray-50">
-                  <div class="py-1">
-                    <a href="#services" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-linen transition-colors">
-                      <div class="w-8 h-8 rounded-lg bg-harbour-50 text-harbour flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="user-check" class="w-4 h-4 text-harbour"></i>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 text-xs">Personal Care & Hygiene</div>
-                        <div class="text-[11px] text-gray-500 font-normal">Bathing, grooming, dressing & mobility</div>
-                      </div>
-                    </a>
-                    <a href="#services" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-linen transition-colors">
-                      <div class="w-8 h-8 rounded-lg bg-sage-50 text-sage flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="smile" class="w-4 h-4 text-sage"></i>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 text-xs">Companionship & Connection</div>
-                        <div class="text-[11px] text-gray-500 font-normal">Meaningful conversation, walks & activities</div>
-                      </div>
-                    </a>
-                    <a href="#services" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-linen transition-colors">
-                      <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="utensils" class="w-4 h-4 text-amber-600"></i>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 text-xs">Household & Nutritious Meals</div>
-                        <div class="text-[11px] text-gray-500 font-normal">Meal preparation, housekeeping, errands</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="py-1">
-                    <a href="#services" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-linen transition-colors">
-                      <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="activity" class="w-4 h-4 text-blue-600"></i>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 text-xs">Post-Hospital Recovery</div>
-                        <div class="text-[11px] text-gray-500 font-normal">Surgery & discharge transitional care</div>
-                      </div>
-                    </a>
-                    <a href="#services" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-linen transition-colors">
-                      <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="pill" class="w-4 h-4 text-emerald-600"></i>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 text-xs">Medication Reminders</div>
-                        <div class="text-[11px] text-gray-500 font-normal">Routine schedules & safety oversight</div>
-                      </div>
-                    </a>
-                    <a href="#services" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-linen transition-colors">
-                      <div class="w-8 h-8 rounded-lg bg-coral-50 text-coral flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="heart" class="w-4 h-4 text-coral"></i>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 text-xs">Family Respite Care</div>
-                        <div class="text-[11px] text-gray-500 font-normal">Short-term relief to prevent caregiver burnout</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <a href="#approach" class="hover:text-harbour transition-colors">Our Approach</a>
-            <a href="#why-us" class="hover:text-harbour transition-colors">Why Grace Harbour</a>
-            <a href="#testimonials" class="hover:text-harbour transition-colors">Families</a>
-            <a href="#faq" class="hover:text-harbour transition-colors">FAQs</a>
-            <a href="#contact" class="hover:text-harbour transition-colors">Contact</a>
+          <!-- Desktop Navigation (Reduced to 5 Links, No Duplicates, No Wrapping) -->
+          <nav class="hidden min-[1100px]:flex items-center gap-7 text-base font-semibold text-slate-700">
+            <a href="#services" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Services</a>
+            <a href="#approach" class="whitespace-nowrap hover:text-harbour transition-colors py-2">How It Works</a>
+            <a href="#why-us" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Why Us</a>
+            <a href="#faq" class="whitespace-nowrap hover:text-harbour transition-colors py-2">FAQs</a>
+            <a href="#contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
           </nav>
 
-          <!-- Action CTAs -->
-          <div class="hidden sm:flex items-center gap-3">
-            <a
-              href="tel:6043794810"
-              class="flex items-center gap-2 text-harbour font-semibold text-xs sm:text-sm px-3.5 py-2 rounded-lg hover:bg-harbour-50 transition-colors"
-            >
-              <i data-lucide="phone" class="w-4 h-4 text-sage"></i>
-              <span class="hidden xl:inline">(604) 379-4810</span>
-            </a>
+          <!-- Single Header CTA Button (No duplicate phone) -->
+          <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
             <a
               href="#assessment"
-              class="bg-coral hover:bg-coral-600 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-lg shadow-sm hover:shadow-glow transition-all flex items-center gap-2"
+              class="bg-coral hover:bg-coral-600 text-white font-semibold text-sm sm:text-base px-5 py-2.5 rounded-lg shadow-sm hover:shadow-glow transition-all flex items-center gap-2 whitespace-nowrap"
             >
               <i data-lucide="calendar" class="w-4 h-4"></i>
               <span>Book Free Assessment</span>
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle -->
+          <!-- Mobile Hamburger Toggle (< 1100px) -->
           <button
             id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
-            class="lg:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
+            class="min-[1100px]:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
             aria-label="Toggle navigation"
           >
             <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
@@ -263,24 +172,24 @@
         </div>
 
         <!-- Mobile Drawer Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 py-4 px-2 space-y-2 text-sm font-medium text-gray-700 bg-white">
-          <a href="#services" onclick="toggleMobileMenu()" class="block px-4 py-2 hover:bg-linen rounded-lg">Our Care Services</a>
-          <a href="#approach" onclick="toggleMobileMenu()" class="block px-4 py-2 hover:bg-linen rounded-lg">How It Works (4 Steps)</a>
-          <a href="#why-us" onclick="toggleMobileMenu()" class="block px-4 py-2 hover:bg-linen rounded-lg">Why Grace Harbour</a>
-          <a href="#testimonials" onclick="toggleMobileMenu()" class="block px-4 py-2 hover:bg-linen rounded-lg">Family Stories</a>
-          <a href="#faq" onclick="toggleMobileMenu()" class="block px-4 py-2 hover:bg-linen rounded-lg">Frequently Asked Questions</a>
-          <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2 hover:bg-linen rounded-lg">Contact Us</a>
+        <div id="mobileMenu" class="hidden min-[1100px]:hidden border-t border-gray-100 py-4 px-2 space-y-2 text-base font-semibold text-slate-700 bg-white">
+          <a href="#services" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Services</a>
+          <a href="#approach" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">How It Works</a>
+          <a href="#why-us" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Why Us</a>
+          <a href="#testimonials" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Family Testimonials</a>
+          <a href="#faq" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">FAQs</a>
+          <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Contact Us</a>
           <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
             <a
               href="tel:6043794810"
-              class="flex items-center justify-center gap-2 py-2.5 rounded-lg border border-harbour text-harbour font-semibold text-sm"
+              class="flex items-center justify-center gap-2 py-3 rounded-lg border border-harbour text-harbour font-bold text-base"
             >
-              <i data-lucide="phone" class="w-4 h-4"></i> Call (604) 379-4810
+              <i data-lucide="phone" class="w-4 h-4 text-coral"></i> Call (604) 379-4810
             </a>
             <a
               href="#assessment"
               onclick="toggleMobileMenu()"
-              class="text-center py-2.5 rounded-lg bg-coral text-white font-semibold text-sm shadow-sm"
+              class="text-center py-3 rounded-lg bg-coral text-white font-bold text-base shadow-sm"
             >
               Schedule Free In-Home Assessment
             </a>
@@ -290,20 +199,24 @@
     </header>
 
     <!-- ══════════════════════════════════════════════
-         HERO SECTION WITH INTRO & TRUST SIGNALS
+         HERO SECTION
+         - Replaced photo with warm in-home scene (tea/kitchen table)
+         - Left-aligned text on mobile
+         - Hero review badge stacked cleanly below photo on small screens
+         - Laura M. quote matches testimonial
     ══════════════════════════════════════════════ -->
-    <section class="relative bg-gradient-to-b from-linen to-white py-16 lg:py-24 overflow-hidden">
+    <section class="relative bg-gradient-to-b from-linen to-white py-14 lg:py-20 overflow-hidden">
       <!-- Decorative Backdrop Circles -->
       <div class="absolute top-0 right-0 w-96 h-96 bg-sage-100/50 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
       <div class="absolute bottom-0 left-0 w-80 h-80 bg-harbour-100/40 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
-          <!-- Hero Copy -->
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-sage-200/80 shadow-xs text-xs font-semibold text-sage-700">
-              <span class="w-2 h-2 rounded-full bg-sage"></span>
+          <!-- Hero Copy: Left-aligned on mobile and desktop -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-sage-300 shadow-xs text-xs sm:text-sm font-bold text-sage-800">
+              <span class="w-2.5 h-2.5 rounded-full bg-sage"></span>
               Dedicated In-Home Senior Care Across Nova Scotia
             </div>
 
@@ -312,15 +225,15 @@
               <span class="text-sage italic">True Dignity</span> at Home.
             </h1>
 
-            <p class="font-sans text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p class="font-sans text-base sm:text-lg text-slate-700 max-w-2xl leading-relaxed">
               When aging relatives need assistance, home remains their greatest sanctuary. Grace Harbour matches vetted, empathetic caregivers to provide personal care, warm companionship, and post-recovery support—giving your family complete peace of mind.
             </p>
 
             <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4 pt-2">
               <a
                 href="#assessment"
-                class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-semibold text-base shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2 group"
+                class="text-center px-8 py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2 group"
               >
                 <span>Schedule Free In-Home Assessment</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
@@ -328,7 +241,7 @@
 
               <a
                 href="tel:6043794810"
-                class="w-full sm:w-auto text-center px-6 py-4 rounded-xl bg-white hover:bg-linen border border-gray-200 text-harbour font-semibold text-base shadow-xs transition-colors flex items-center justify-center gap-2.5"
+                class="text-center px-6 py-4 rounded-xl bg-white hover:bg-linen border border-gray-300 text-harbour font-bold text-base shadow-xs transition-colors flex items-center justify-center gap-2.5"
               >
                 <div class="w-7 h-7 rounded-full bg-sage-50 text-sage flex items-center justify-center">
                   <i data-lucide="phone" class="w-4 h-4"></i>
@@ -337,8 +250,8 @@
               </a>
             </div>
 
-            <!-- Trust Pills -->
-            <div class="pt-6 border-t border-gray-200/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-medium text-gray-600">
+            <!-- Trust Pills: 14px secondary text for senior accessibility -->
+            <div class="pt-6 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-semibold text-slate-700">
               <div class="flex items-center gap-2">
                 <i data-lucide="shield-check" class="w-4 h-4 text-sage flex-shrink-0"></i>
                 <span>100% Vetted & Bonded</span>
@@ -349,58 +262,64 @@
               </div>
               <div class="flex items-center gap-2">
                 <i data-lucide="clock" class="w-4 h-4 text-sage flex-shrink-0"></i>
-                <span>No Long-Term Contracts</span>
+                <span>No Contracts</span>
               </div>
               <div class="flex items-center gap-2">
                 <i data-lucide="sparkles" class="w-4 h-4 text-sage flex-shrink-0"></i>
-                <span>Local Nova Scotia Care</span>
+                <span>Nova Scotia Roots</span>
               </div>
             </div>
           </div>
 
-          <!-- Hero Image & Interactive Card -->
-          <div class="lg:col-span-5 relative">
+          <!-- Hero Image & Badge (Stacked cleanly on mobile, no overlapping quote text) -->
+          <div class="lg:col-span-5">
             <div class="relative mx-auto max-w-md lg:max-w-none">
-              <!-- Main Image Card -->
+              
+              <!-- Main Photo Card: Warm in-home scene (tea at kitchen table) -->
+              <!-- PLACEHOLDER HERO IMAGE: Replace with actual client photo -->
               <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-white bg-linen">
                 <img
-                  src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80"
-                  alt="Compassionate caregiver spending quality time with a smiling senior at home"
-                  class="w-full h-[460px] object-cover"
+                  src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=900&q=80"
+                  alt="Compassionate caregiver and smiling senior enjoying conversation over tea at kitchen table"
+                  class="w-full h-[420px] sm:h-[460px] object-cover"
                   loading="eager"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-harbour/70 via-transparent to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
                 <div class="absolute bottom-6 left-6 right-6 text-white">
-                  <span class="inline-block px-2.5 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-medium mb-1">
+                  <span class="inline-block px-3 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-semibold mb-1.5 uppercase tracking-wide">
                     Personalized In-Home Support
                   </span>
-                  <div class="font-serif text-xl font-bold">"Where care meets compassion — and home remains home."</div>
+                  <div class="font-serif text-lg sm:text-xl font-bold leading-snug">
+                    "Where care meets compassion — and home remains home."
+                  </div>
                 </div>
               </div>
 
-              <!-- Floating Trust Badge 1 -->
-              <div class="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 rounded-xl shadow-lg border border-gray-100 flex items-center gap-3">
+              <!-- Floating Trust Badge (Bonded Caregivers) -->
+              <div class="hidden sm:flex absolute -top-4 -left-4 bg-white p-3.5 rounded-xl shadow-lg border border-gray-100 items-center gap-3">
                 <div class="w-10 h-10 rounded-lg bg-sage/10 text-sage flex items-center justify-center flex-shrink-0">
                   <i data-lucide="award" class="w-5 h-5 text-sage"></i>
                 </div>
                 <div>
-                  <div class="text-xs font-bold text-harbour">Registered & Bonded</div>
-                  <div class="text-[11px] text-gray-500">Certified Care Professionals</div>
+                  <div class="text-sm font-bold text-harbour">Registered & Bonded</div>
+                  <div class="text-xs text-slate-600">Certified Care Professionals</div>
                 </div>
               </div>
 
-              <!-- Floating Trust Badge 2 -->
-              <div class="absolute -bottom-5 -right-4 sm:-right-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100 max-w-[220px]">
-                <div class="flex items-center gap-1 text-amber-500 mb-1">
-                  <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-                  <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-                  <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-                  <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-                  <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              <!-- Review Card: STACKED below image on small screens (< 640px) to prevent overlapping caption -->
+              <!-- Name made consistent with Testimonials (Laura M., Dartmouth) -->
+              <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-right-6 bg-white p-4 rounded-xl shadow-lg border border-gray-200 max-w-xs ml-auto">
+                <div class="flex items-center gap-1 text-amber-500 mb-1.5">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                 </div>
-                <div class="text-xs font-bold text-gray-900">"They gave us our lives back."</div>
-                <div class="text-[10px] text-gray-500 mt-0.5">— Sarah M., Family Caregiver</div>
+                <div class="text-sm font-bold text-gray-900 leading-snug">"Grace Harbour gave our family our lives back."</div>
+                <div class="text-xs text-slate-600 mt-1 font-medium">— Laura M., Dartmouth (Post-hospital care)</div>
               </div>
+
             </div>
           </div>
 
@@ -410,6 +329,7 @@
 
     <!-- ══════════════════════════════════════════════
          INTERACTIVE "FIND THE RIGHT CARE" WIDGET
+         (Enhanced: "Get Custom Care Match" pre-fills form & scrolls directly to #assessment)
     ══════════════════════════════════════════════ -->
     <section class="bg-harbour py-12 text-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
@@ -417,9 +337,9 @@
           <div class="grid lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-4 space-y-2">
-              <span class="text-coral text-xs font-bold tracking-wider uppercase">Care Recommendation Tool</span>
+              <span class="text-coral-500 text-xs font-bold tracking-wider uppercase">Care Recommendation Tool</span>
               <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white">Find the Right Support for Your Loved One</h2>
-              <p class="text-sm text-gray-300">
+              <p class="text-base text-gray-300">
                 Answer 3 quick questions to find the ideal care plan, estimated hours, and caregiver match.
               </p>
             </div>
@@ -430,8 +350,8 @@
                 <div class="grid sm:grid-cols-3 gap-4">
                   <!-- Question 1 -->
                   <div>
-                    <label class="block text-xs font-medium text-gray-300 mb-1.5">Who needs care?</label>
-                    <select id="quizRecipient" class="w-full bg-harbour text-white text-xs sm:text-sm rounded-lg border border-harbour-600 p-2.5 focus:border-sage focus:outline-none">
+                    <label class="block text-sm font-semibold text-gray-200 mb-1.5">Who needs care?</label>
+                    <select id="quizRecipient" class="w-full bg-harbour text-white text-sm rounded-lg border border-harbour-600 p-3 focus:border-sage focus:outline-none">
                       <option value="Aging Parent(s)">Aging Parent(s)</option>
                       <option value="Spouse">Spouse</option>
                       <option value="Myself">Myself</option>
@@ -441,21 +361,21 @@
 
                   <!-- Question 2 -->
                   <div>
-                    <label class="block text-xs font-medium text-gray-300 mb-1.5">Primary Support Needed?</label>
-                    <select id="quizService" class="w-full bg-harbour text-white text-xs sm:text-sm rounded-lg border border-harbour-600 p-2.5 focus:border-sage focus:outline-none">
-                      <option value="Companionship & Meals">Companionship & Meals</option>
-                      <option value="Personal Care & Bathing">Personal Care & Bathing</option>
+                    <label class="block text-sm font-semibold text-gray-200 mb-1.5">Primary Support Needed?</label>
+                    <select id="quizService" class="w-full bg-harbour text-white text-sm rounded-lg border border-harbour-600 p-3 focus:border-sage focus:outline-none">
+                      <option value="Personal Care & Daily Living">Personal Care & Bathing</option>
+                      <option value="Companionship & Connection">Companionship & Social Support</option>
+                      <option value="Household Support & Meals">Household Support & Meals</option>
                       <option value="Post-Hospital Recovery">Post-Hospital Recovery</option>
-                      <option value="Medication & Safety Checks">Medication & Safety Checks</option>
-                      <option value="Respite Care for Family">Respite Care for Family</option>
-                      <option value="Full Day or 24/7 Support">Full Day or 24/7 Support</option>
+                      <option value="Medication Reminders">Medication Reminders</option>
+                      <option value="Family Respite Relief">Respite Care for Family</option>
                     </select>
                   </div>
 
                   <!-- Question 3 -->
                   <div>
-                    <label class="block text-xs font-medium text-gray-300 mb-1.5">When to begin?</label>
-                    <select id="quizTimeline" class="w-full bg-harbour text-white text-xs sm:text-sm rounded-lg border border-harbour-600 p-2.5 focus:border-sage focus:outline-none">
+                    <label class="block text-sm font-semibold text-gray-200 mb-1.5">When to begin?</label>
+                    <select id="quizTimeline" class="w-full bg-harbour text-white text-sm rounded-lg border border-harbour-600 p-3 focus:border-sage focus:outline-none">
                       <option value="Immediately (Within 48h)">Immediately (Within 48h)</option>
                       <option value="Within 1-2 Weeks">Within 1-2 Weeks</option>
                       <option value="Next Month">Next Month</option>
@@ -465,35 +385,19 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-harbour-700/60">
-                  <div class="text-xs text-gray-300 flex items-center gap-2">
+                  <div class="text-sm text-gray-300 flex items-center gap-2">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
                     <span>Free consultation • Zero commitment required</span>
                   </div>
                   <button
                     type="submit"
-                    class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-coral hover:bg-coral-600 text-white font-semibold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2"
+                    class="w-full sm:w-auto px-7 py-3 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-sm sm:text-base transition-colors flex items-center justify-center gap-2"
                   >
                     <span>Get Custom Care Match</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                   </button>
                 </div>
               </form>
-
-              <!-- Quiz Feedback Result Box (Hidden initially) -->
-              <div id="quizResultBox" class="hidden mt-4 p-4 rounded-lg bg-sage/20 border border-sage/40 text-xs text-white">
-                <div class="flex items-start gap-3">
-                  <i data-lucide="sparkles" class="w-5 h-5 text-coral flex-shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="text-sm font-serif block mb-1">Recommended Care Blueprint Ready!</strong>
-                    <span id="quizResultText">We have tailored a care plan for your loved one. Let's arrange a quick 10-minute assessment call.</span>
-                    <div class="mt-2.5">
-                      <a href="#assessment" class="inline-block bg-white text-harbour font-bold px-3 py-1.5 rounded text-xs hover:bg-linen">
-                        Confirm In-Home Assessment Details ↓
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
           </div>
@@ -503,170 +407,199 @@
 
     <!-- ══════════════════════════════════════════════
          CORE CARE PILLARS / SERVICES
+         - Shortened to 2-3 bullets each
+         - Consistent link label: "Ask about this service →"
+         - Accessible text sizes (16px / 14px) and high-contrast labels
     ══════════════════════════════════════════════ -->
     <section id="services" class="py-20 bg-linen">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         
         <!-- Header -->
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span class="text-sage text-xs font-bold uppercase tracking-widest">Our Care Specializations</span>
+          <span class="text-sage-800 text-xs sm:text-sm font-bold uppercase tracking-widest bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+            Our Care Specializations
+          </span>
           <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-harbour font-bold tracking-tight">
             Comprehensive In-Home Care Built Around Your Routine
           </h2>
-          <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+          <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
             Every senior’s journey is unique. Whether you require a few hours of companionship a week or full daily personal assistance, our caregivers adapt to your lifestyle.
           </p>
         </div>
 
-        <!-- 6 Pillars Grid -->
+        <!-- 6 Pillars Grid (No photos on service cards as requested) -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Pillar 1: Personal Care -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-harbour-50 text-harbour flex items-center justify-center mb-6 group-hover:bg-harbour group-hover:text-white transition-colors">
                 <i data-lucide="user-check" class="w-6 h-6"></i>
               </div>
               <h3 class="font-serif text-xl font-bold text-harbour mb-3">Personal Care & Daily Living</h3>
-              <p class="text-sm text-gray-600 leading-relaxed mb-6">
+              <p class="text-base text-slate-700 leading-relaxed mb-6">
                 Respectful, gentle assistance with essential daily routines, protecting dignity and physical safety while promoting independence.
               </p>
-              <div class="space-y-2.5 pt-4 border-t border-gray-100 text-xs text-gray-700">
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Bathing, showering & sponge baths</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Dressing, grooming & personal hygiene</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Mobility assistance, bed transfers & walking</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Gentle incontinence & toileting care</div>
+              <!-- 3 Concise Bullets -->
+              <div class="space-y-3 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Bathing, showering, grooming & dressing</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Mobility assistance, bed transfers & walking</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Gentle incontinence & personal hygiene care</div>
               </div>
             </div>
             <div class="mt-8 pt-4 border-t border-gray-100">
-              <a href="#assessment" class="text-xs font-semibold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5">
-                <span>Inquire about personal care</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <a
+                href="#assessment"
+                onclick="prefillService('Personal Care & Daily Living')"
+                class="text-sm font-bold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5"
+              >
+                <span>Ask about this service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 2: Companionship -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-sage-50 text-sage flex items-center justify-center mb-6 group-hover:bg-sage group-hover:text-white transition-colors">
                 <i data-lucide="heart" class="w-6 h-6"></i>
               </div>
-              <h3 class="font-serif text-xl font-bold text-harbour mb-3">Companionship & Social Connection</h3>
-              <p class="text-sm text-gray-600 leading-relaxed mb-6">
+              <h3 class="font-serif text-xl font-bold text-harbour mb-3">Companionship & Social Support</h3>
+              <p class="text-base text-slate-700 leading-relaxed mb-6">
                 Combatting senior isolation through genuine human presence, meaningful conversation, mentally engaging pastimes, and shared moments.
               </p>
-              <div class="space-y-2.5 pt-4 border-t border-gray-100 text-xs text-gray-700">
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Engaging conversation & reminiscence</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Puzzles, reading, music & hobby support</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Outdoor walks & neighborhood outings</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Companionship over nutritious shared meals</div>
+              <!-- 3 Concise Bullets -->
+              <div class="space-y-3 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Engaging conversation, games & hobby sharing</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Neighborhood walks & accompanied outings</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Companionship over nutritious shared meals</div>
               </div>
             </div>
             <div class="mt-8 pt-4 border-t border-gray-100">
-              <a href="#assessment" class="text-xs font-semibold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5">
-                <span>Explore companion care</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <a
+                href="#assessment"
+                onclick="prefillService('Companionship & Connection')"
+                class="text-sm font-bold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5"
+              >
+                <span>Ask about this service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 3: Household & Meals -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
                 <i data-lucide="utensils-crossed" class="w-6 h-6"></i>
               </div>
               <h3 class="font-serif text-xl font-bold text-harbour mb-3">Household Support & Meal Prep</h3>
-              <p class="text-sm text-gray-600 leading-relaxed mb-6">
+              <p class="text-base text-slate-700 leading-relaxed mb-6">
                 Keeping the home environment clean, safe, and organized, accompanied by healthy meals tailored to dietary preferences.
               </p>
-              <div class="space-y-2.5 pt-4 border-t border-gray-100 text-xs text-gray-700">
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Home-cooked meals planned to dietary needs</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Light housekeeping, dusting & vacuuming</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Fresh bed linen changes & laundry care</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Grocery shopping, pharmacy & errand runs</div>
+              <!-- 3 Concise Bullets -->
+              <div class="space-y-3 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Home-cooked meals tailored to dietary needs</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Light housekeeping, laundry & fresh linens</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Grocery shopping, pharmacy & errand runs</div>
               </div>
             </div>
             <div class="mt-8 pt-4 border-t border-gray-100">
-              <a href="#assessment" class="text-xs font-semibold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5">
-                <span>Inquire about homemaking</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <a
+                href="#assessment"
+                onclick="prefillService('Household Support & Meals')"
+                class="text-sm font-bold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5"
+              >
+                <span>Ask about this service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 4: Post-Hospital Recovery -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 <i data-lucide="activity" class="w-6 h-6"></i>
               </div>
               <h3 class="font-serif text-xl font-bold text-harbour mb-3">Post-Hospital & Recovery Care</h3>
-              <p class="text-sm text-gray-600 leading-relaxed mb-6">
-                Critical transitional support following a hospital discharge or surgery to prevent complications and avoid hospital readmissions.
+              <p class="text-base text-slate-700 leading-relaxed mb-6">
+                Critical transitional support following a hospital discharge or surgery to prevent complications and avoid readmission.
               </p>
-              <div class="space-y-2.5 pt-4 border-t border-gray-100 text-xs text-gray-700">
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Discharge order & recovery plan coordination</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Safe mobility, bed transfers & fall prevention</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Follow-up appointment scheduling & transit</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Continuous observation & progress monitoring</div>
+              <!-- 3 Concise Bullets -->
+              <div class="space-y-3 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Discharge order & recovery plan coordination</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Safe mobility, transfer aid & fall prevention</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Follow-up appointment scheduling & transit aid</div>
               </div>
             </div>
             <div class="mt-8 pt-4 border-t border-gray-100">
-              <a href="#assessment" class="text-xs font-semibold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5">
-                <span>Explore recovery care</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <a
+                href="#assessment"
+                onclick="prefillService('Post-Hospital Recovery')"
+                class="text-sm font-bold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5"
+              >
+                <span>Ask about this service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
-          <!-- Pillar 5: Medication Assistance -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
+          <!-- Pillar 5: Medication Reminders -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                 <i data-lucide="pill" class="w-6 h-6"></i>
               </div>
               <h3 class="font-serif text-xl font-bold text-harbour mb-3">Medication Reminders & Wellness</h3>
-              <p class="text-sm text-gray-600 leading-relaxed mb-6">
+              <p class="text-base text-slate-700 leading-relaxed mb-6">
                 Structured oversight ensuring prescriptions, dosage timings, and basic daily wellness routines are followed consistently and safely.
               </p>
-              <div class="space-y-2.5 pt-4 border-t border-gray-100 text-xs text-gray-700">
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Accurate medication schedule reminders</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Hydration checks & meal timing coordination</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Daily health status & wellness reporting</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Prompt alerts to family if changes occur</div>
+              <!-- 3 Concise Bullets -->
+              <div class="space-y-3 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Accurate medication schedule & timing prompts</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Hydration & meal-timing coordination</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Daily wellness updates & prompt family alerts</div>
               </div>
             </div>
             <div class="mt-8 pt-4 border-t border-gray-100">
-              <a href="#assessment" class="text-xs font-semibold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5">
-                <span>Inquire about medication support</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <a
+                href="#assessment"
+                onclick="prefillService('Medication Reminders')"
+                class="text-sm font-bold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5"
+              >
+                <span>Ask about this service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 6: Respite Care -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft hover:shadow-card transition-all group flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-xl bg-coral-50 text-coral flex items-center justify-center mb-6 group-hover:bg-coral group-hover:text-white transition-colors">
                 <i data-lucide="sun" class="w-6 h-6"></i>
               </div>
               <h3 class="font-serif text-xl font-bold text-harbour mb-3">Respite Care for Families</h3>
-              <p class="text-sm text-gray-600 leading-relaxed mb-6">
-                Dedicated relief for family members balancing work, personal lives, and eldercare—allowing you to recharge while your loved one is in safe hands.
+              <p class="text-base text-slate-700 leading-relaxed mb-6">
+                Dedicated relief for family members balancing work, personal lives, and eldercare—allowing you to recharge with peace of mind.
               </p>
-              <div class="space-y-2.5 pt-4 border-t border-gray-100 text-xs text-gray-700">
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Flexible hourly, weekend or overnight relief</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Vacation & holiday family coverage</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Caregiver burnout prevention</div>
-                <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Seamless continuity with existing routines</div>
+              <!-- 3 Concise Bullets -->
+              <div class="space-y-3 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Flexible daytime, weekend or overnight coverage</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Vacation, work trip & holiday relief</div>
+                <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Caregiver burnout prevention & routine continuity</div>
               </div>
             </div>
             <div class="mt-8 pt-4 border-t border-gray-100">
-              <a href="#assessment" class="text-xs font-semibold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5">
-                <span>Learn about family respite</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <a
+                href="#assessment"
+                onclick="prefillService('Family Respite Relief')"
+                class="text-sm font-bold text-harbour group-hover:text-coral transition-colors flex items-center gap-1.5"
+              >
+                <span>Ask about this service</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
@@ -678,83 +611,110 @@
 
     <!-- ══════════════════════════════════════════════
          THE 4-STEP CARE JOURNEY (HOW IT WORKS)
+         - Added 1 supporting image (coordinator on in-home visit)
+         - 16px body text & 14px secondary text
     ══════════════════════════════════════════════ -->
     <section id="approach" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span class="text-coral text-xs font-bold uppercase tracking-widest">Our Care Process</span>
+          <span class="text-coral-700 text-xs sm:text-sm font-bold uppercase tracking-widest bg-coral-50 px-3 py-1 rounded-full border border-coral-200">
+            Our Care Process
+          </span>
           <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-harbour font-bold tracking-tight">
             How We Get Started: A Simple, Reassuring 4-Step Path
           </h2>
-          <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+          <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
             Transitioning to in-home care shouldn't feel overwhelming. We guide your family at every step, starting with a friendly, zero-pressure conversation.
           </p>
         </div>
 
-        <!-- 4 Steps Flow -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        <!-- 4 Steps Flow with Supporting Image -->
+        <div class="grid lg:grid-cols-12 gap-8 items-center mb-12">
           
-          <!-- Step 1 -->
-          <div class="relative bg-linen/60 rounded-2xl p-6 border border-gray-200/70 hover:border-sage transition-all">
-            <div class="w-10 h-10 rounded-full bg-harbour text-white font-serif font-bold text-lg flex items-center justify-center mb-5">
-              1
+          <!-- Supporting Photo: Coordinator Home Visit (4 cols) -->
+          <!-- PLACEHOLDER IMAGE: Coordinator on in-home consultation -->
+          <div class="lg:col-span-4">
+            <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-linen bg-linen">
+              <img
+                src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
+                alt="Grace Harbour care coordinator conducting an in-home assessment visit with a senior and family"
+                class="w-full h-80 lg:h-[480px] object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-harbour/75 via-transparent to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5 text-white">
+                <div class="font-serif font-bold text-base sm:text-lg">In-Home Consultation</div>
+                <div class="text-xs sm:text-sm text-slate-200 mt-1">We listen, observe home routines, and tailor care without rush.</div>
+              </div>
             </div>
-            <h3 class="font-serif text-lg font-bold text-harbour mb-2">Friendly Initial Call</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">
-              We listen carefully to your family's situation, answering your questions and understanding your loved one’s daily health and routine requirements.
-            </p>
           </div>
 
-          <!-- Step 2 -->
-          <div class="relative bg-linen/60 rounded-2xl p-6 border border-gray-200/70 hover:border-sage transition-all">
-            <div class="w-10 h-10 rounded-full bg-sage text-white font-serif font-bold text-lg flex items-center justify-center mb-5">
-              2
+          <!-- The 4 Steps (8 cols) -->
+          <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6">
+            
+            <!-- Step 1 -->
+            <div class="bg-linen/70 rounded-2xl p-6 border border-gray-200 hover:border-sage transition-all">
+              <div class="w-11 h-11 rounded-full bg-harbour text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                1
+              </div>
+              <h3 class="font-serif text-lg font-bold text-harbour mb-2">Friendly Initial Call</h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                We listen carefully to your family's situation, answer your questions, and understand your loved one’s daily health and routine requirements.
+              </p>
             </div>
-            <h3 class="font-serif text-lg font-bold text-harbour mb-2">Free In-Home Assessment</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">
-              A care coordinator visits your home, checks environment safety, reviews personal preferences, and builds a customized Care Blueprint.
-            </p>
-          </div>
 
-          <!-- Step 3 -->
-          <div class="relative bg-linen/60 rounded-2xl p-6 border border-gray-200/70 hover:border-sage transition-all">
-            <div class="w-10 h-10 rounded-full bg-coral text-white font-serif font-bold text-lg flex items-center justify-center mb-5">
-              3
+            <!-- Step 2 -->
+            <div class="bg-linen/70 rounded-2xl p-6 border border-gray-200 hover:border-sage transition-all">
+              <div class="w-11 h-11 rounded-full bg-sage text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                2
+              </div>
+              <h3 class="font-serif text-lg font-bold text-harbour mb-2">Free In-Home Assessment</h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                A care coordinator visits your home, checks environment safety, reviews personal preferences, and builds a customized Care Blueprint.
+              </p>
             </div>
-            <h3 class="font-serif text-lg font-bold text-harbour mb-2">Caregiver Matching</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">
-              We don't just assign any staff—we thoughtfully match a caregiver based on experience, personality, shared interests, and language compatibility.
-            </p>
-          </div>
 
-          <!-- Step 4 -->
-          <div class="relative bg-linen/60 rounded-2xl p-6 border border-gray-200/70 hover:border-sage transition-all">
-            <div class="w-10 h-10 rounded-full bg-harbour-800 text-white font-serif font-bold text-lg flex items-center justify-center mb-5">
-              4
+            <!-- Step 3 -->
+            <div class="bg-linen/70 rounded-2xl p-6 border border-gray-200 hover:border-sage transition-all">
+              <div class="w-11 h-11 rounded-full bg-coral text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                3
+              </div>
+              <h3 class="font-serif text-lg font-bold text-harbour mb-2">Caregiver Matching</h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                We don't just assign any staff—we thoughtfully match a caregiver based on experience, personality, shared interests, and language compatibility.
+              </p>
             </div>
-            <h3 class="font-serif text-lg font-bold text-harbour mb-2">Care Begins & Evolves</h3>
-            <p class="text-xs text-gray-600 leading-relaxed">
-              Your caregiver arrives on schedule. Regular supervisory check-ins, transparent shift updates, and adaptive care plan adjustments ensure quality.
-            </p>
+
+            <!-- Step 4 -->
+            <div class="bg-linen/70 rounded-2xl p-6 border border-gray-200 hover:border-sage transition-all">
+              <div class="w-11 h-11 rounded-full bg-harbour-800 text-white font-serif font-bold text-lg flex items-center justify-center mb-4">
+                4
+              </div>
+              <h3 class="font-serif text-lg font-bold text-harbour mb-2">Care Begins & Evolves</h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                Your caregiver arrives on schedule. Regular supervisory check-ins, transparent shift updates, and adaptive care plan adjustments ensure quality.
+              </p>
+            </div>
+
           </div>
 
         </div>
 
         <!-- Banner inside process -->
-        <div class="mt-12 p-6 rounded-2xl bg-sage-50 border border-sage-200/60 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sage text-white flex items-center justify-center flex-shrink-0">
-              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+        <div class="p-6 sm:p-8 rounded-2xl bg-sage-50 border border-sage-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-xl bg-sage text-white flex items-center justify-center flex-shrink-0">
+              <i data-lucide="calendar-check" class="w-6 h-6"></i>
             </div>
             <div>
-              <div class="font-bold text-harbour text-sm">Need care promptly?</div>
-              <div class="text-xs text-gray-600">We can often initiate assessments and caregiver placement within 24 to 48 hours.</div>
+              <div class="font-bold text-harbour text-base">Need care promptly?</div>
+              <div class="text-sm text-slate-700">We can often initiate assessments and caregiver placement within 24 to 48 hours.</div>
             </div>
           </div>
           <a
             href="tel:6043794810"
-            class="px-5 py-2.5 rounded-lg bg-harbour hover:bg-harbour-800 text-white font-semibold text-xs transition-colors whitespace-nowrap"
+            class="px-6 py-3 rounded-lg bg-harbour hover:bg-harbour-800 text-white font-semibold text-sm transition-colors whitespace-nowrap"
           >
             Speak With a Coordinator Today
           </a>
@@ -765,106 +725,180 @@
 
     <!-- ══════════════════════════════════════════════
          THE "WHY GRACE HARBOUR" DIFFERENCE
+         - Added 3 caregiver/coordinator photos ("Consistent, Familiar Faces")
+         - Changed "0 / Long-term contracts" stat to read "No Contracts" as words
+         - Accessible text sizes
     ══════════════════════════════════════════════ -->
     <section id="why-us" class="py-20 bg-harbour text-white relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="grid lg:grid-cols-12 gap-12 items-center mb-16">
           
           <div class="lg:col-span-6 space-y-6">
-            <span class="text-coral text-xs font-bold uppercase tracking-widest">The Grace Harbour Difference</span>
+            <span class="text-coral-500 text-xs sm:text-sm font-bold uppercase tracking-widest">The Grace Harbour Difference</span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               More Than a Checklist.<br />
               <span class="text-sage-200 italic">Whole-Person Care</span> That Nurtures the Spirit.
             </h2>
-            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            <p class="text-slate-200 text-base sm:text-lg leading-relaxed">
               Unlike corporate franchises that rush through chores on an automated timer, Grace Harbour operates with heart. We practice interactive caregiving—transforming daily routines into uplifting moments that keep seniors physically, mentally, and socially fulfilled.
             </p>
 
             <div class="space-y-4 pt-2">
               <div class="flex items-start gap-4">
-                <div class="w-9 h-9 rounded-lg bg-sage/20 border border-sage/40 text-sage-200 flex items-center justify-center flex-shrink-0 mt-1">
+                <div class="w-10 h-10 rounded-lg bg-sage/20 border border-sage/40 text-sage-200 flex items-center justify-center flex-shrink-0 mt-1">
                   <i data-lucide="shield" class="w-5 h-5 text-coral"></i>
                 </div>
                 <div>
-                  <h4 class="font-bold text-white text-sm">Rigorous 5-Point Caregiver Screening</h4>
-                  <p class="text-xs text-gray-300 mt-0.5">Vulnerable sector police checks, comprehensive reference audits, credential verification, and empathy profiling.</p>
+                  <h4 class="font-bold text-white text-base">Rigorous 5-Point Caregiver Screening</h4>
+                  <p class="text-sm text-slate-300 mt-1">Vulnerable sector police checks, comprehensive reference audits, credential verification, and empathy profiling.</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-4">
-                <div class="w-9 h-9 rounded-lg bg-sage/20 border border-sage/40 text-sage-200 flex items-center justify-center flex-shrink-0 mt-1">
+                <div class="w-10 h-10 rounded-lg bg-sage/20 border border-sage/40 text-sage-200 flex items-center justify-center flex-shrink-0 mt-1">
                   <i data-lucide="users" class="w-5 h-5 text-coral"></i>
                 </div>
                 <div>
-                  <h4 class="font-bold text-white text-sm">Consistent, Familiar Faces</h4>
-                  <p class="text-xs text-gray-300 mt-0.5">We avoid the revolving door of unfamiliar strangers. Your loved one builds trust with a dedicated, consistent care team.</p>
+                  <h4 class="font-bold text-white text-base">Consistent, Familiar Faces</h4>
+                  <p class="text-sm text-slate-300 mt-1">We avoid the revolving door of unfamiliar strangers. Your loved one builds trust with a dedicated, consistent care team.</p>
                 </div>
               </div>
 
               <div class="flex items-start gap-4">
-                <div class="w-9 h-9 rounded-lg bg-sage/20 border border-sage/40 text-sage-200 flex items-center justify-center flex-shrink-0 mt-1">
+                <div class="w-10 h-10 rounded-lg bg-sage/20 border border-sage/40 text-sage-200 flex items-center justify-center flex-shrink-0 mt-1">
                   <i data-lucide="message-square" class="w-5 h-5 text-coral"></i>
                 </div>
                 <div>
-                  <h4 class="font-bold text-white text-sm">Transparent Family Communication</h4>
-                  <p class="text-xs text-gray-300 mt-0.5">Direct updates after every shift, so adult children and family caregivers always know how their loved one is thriving.</p>
+                  <h4 class="font-bold text-white text-base">Transparent Family Communication</h4>
+                  <p class="text-sm text-slate-300 mt-1">Direct updates after every shift, so adult children and family caregivers always know how their loved one is thriving.</p>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Stats Grid ("No Contracts" as words instead of "0") -->
           <div class="lg:col-span-6">
             <div class="grid grid-cols-2 gap-4 sm:gap-6">
               <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
                 <div class="font-serif text-4xl sm:text-5xl font-bold text-coral">100%</div>
-                <div class="text-xs font-semibold text-white uppercase tracking-wider">Vetted & Insured</div>
-                <p class="text-[11px] text-gray-400">Complete background checks & liability coverage.</p>
+                <div class="text-sm font-bold text-white uppercase tracking-wider">Vetted & Insured</div>
+                <p class="text-sm text-slate-300">Complete background checks & liability coverage.</p>
               </div>
 
               <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
                 <div class="font-serif text-4xl sm:text-5xl font-bold text-sage-200">24/7</div>
-                <div class="text-xs font-semibold text-white uppercase tracking-wider">Coordination</div>
-                <p class="text-[11px] text-gray-400">Day, evening, overnight & weekend shifts available.</p>
+                <div class="text-sm font-bold text-white uppercase tracking-wider">Coordination</div>
+                <p class="text-sm text-slate-300">Day, evening, overnight & weekend shifts available.</p>
               </div>
 
+              <!-- Changed from "0" to "No Contracts" as requested -->
               <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
-                <div class="font-serif text-4xl sm:text-5xl font-bold text-white">0</div>
-                <div class="text-xs font-semibold text-white uppercase tracking-wider">Long-Term Contracts</div>
-                <p class="text-[11px] text-gray-400">Complete flexibility to pause or adapt care anytime.</p>
+                <div class="font-serif text-2xl sm:text-3xl font-bold text-white pt-2 sm:pt-3">No Contracts</div>
+                <div class="text-sm font-bold text-white uppercase tracking-wider">Total Flexibility</div>
+                <p class="text-sm text-slate-300">Zero long-term contracts; pause or adapt anytime.</p>
               </div>
 
               <div class="bg-harbour-800 border border-harbour-600/50 rounded-2xl p-6 text-center space-y-2">
                 <div class="font-serif text-4xl sm:text-5xl font-bold text-coral">48h</div>
-                <div class="text-xs font-semibold text-white uppercase tracking-wider">Fast Placement</div>
-                <p class="text-[11px] text-gray-400">Prompt turnaround for urgent discharge recovery.</p>
+                <div class="text-sm font-bold text-white uppercase tracking-wider">Fast Placement</div>
+                <p class="text-sm text-slate-300">Prompt turnaround for urgent discharge recovery.</p>
               </div>
             </div>
           </div>
 
         </div>
+
+        <!-- 3 Caregiver/Coordinator Showcase Cards ("Consistent, Familiar Faces") -->
+        <div class="pt-10 border-t border-harbour-700/60">
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <h3 class="font-serif text-2xl font-bold text-white">Consistent, Familiar Faces You Can Rely On</h3>
+            <p class="text-sm text-slate-300 mt-1.5">
+              Meet some of our dedicated Nova Scotia care professionals committed to building genuine bonds with your family.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-6">
+            
+            <!-- Staff 1 -->
+            <!-- PLACEHOLDER STAFF PHOTO 1: Replace with real staff photo -->
+            <div class="bg-harbour-800/80 rounded-2xl p-5 border border-harbour-700 flex items-center gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                alt="Claire R., Lead Care Coordinator in Dartmouth"
+                class="w-16 h-16 rounded-full object-cover border-2 border-sage flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <div class="font-serif font-bold text-white text-base">Claire R.</div>
+                <div class="text-xs text-sage-200 font-semibold uppercase tracking-wider">Care Coordinator</div>
+                <div class="text-xs text-slate-400 mt-0.5">Dartmouth & HRM</div>
+              </div>
+            </div>
+
+            <!-- Staff 2 -->
+            <!-- PLACEHOLDER STAFF PHOTO 2: Replace with real staff photo -->
+            <div class="bg-harbour-800/80 rounded-2xl p-5 border border-harbour-700 flex items-center gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80"
+                alt="David T., Personal Support Worker in Halifax"
+                class="w-16 h-16 rounded-full object-cover border-2 border-coral flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <div class="font-serif font-bold text-white text-base">David T.</div>
+                <div class="text-xs text-coral-300 font-semibold uppercase tracking-wider">Personal Support Worker</div>
+                <div class="text-xs text-slate-400 mt-0.5">Halifax & Surrounding</div>
+              </div>
+            </div>
+
+            <!-- Staff 3 -->
+            <!-- PLACEHOLDER STAFF PHOTO 3: Replace with real staff photo -->
+            <div class="bg-harbour-800/80 rounded-2xl p-5 border border-harbour-700 flex items-center gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+                alt="Elena S., Senior Companion and Respite Specialist in Bedford"
+                class="w-16 h-16 rounded-full object-cover border-2 border-sage flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <div class="font-serif font-bold text-white text-base">Elena S.</div>
+                <div class="text-xs text-sage-200 font-semibold uppercase tracking-wider">Senior Companion & Respite</div>
+                <div class="text-xs text-slate-400 mt-0.5">Bedford & Sackville</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════
          FAMILY STORIES & TESTIMONIALS
+         - Replaced letter badges with placeholder photo avatars
+         - Added Town + Service Type for each testimonial
+         - Laura M. matches hero badge
     ══════════════════════════════════════════════ -->
     <section id="testimonials" class="py-20 bg-linen">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span class="text-sage text-xs font-bold uppercase tracking-widest">Peace of Mind for Families</span>
+          <span class="text-sage-800 text-xs sm:text-sm font-bold uppercase tracking-widest bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+            Peace of Mind for Families
+          </span>
           <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-harbour font-bold tracking-tight">
             Loved Ones We've Had the Privilege to Care For
           </h2>
-          <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+          <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
             Hear from families across Nova Scotia who found the warmth, reliability, and compassion they needed with Grace Harbour.
           </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           
-          <!-- Testimonial 1 -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft flex flex-col justify-between">
+          <!-- Testimonial 1 (Laura M., Dartmouth: Post-hospital care) -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft flex flex-col justify-between">
             <div>
               <div class="flex items-center gap-1 text-amber-500 mb-4">
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -873,23 +907,27 @@
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
               </div>
-              <p class="text-sm text-gray-700 italic leading-relaxed mb-6">
+              <p class="text-base text-slate-800 italic leading-relaxed mb-6">
                 "When Mom was discharged from the hospital after hip surgery, we were terrified about her falling again. Grace Harbour stepped in immediately with personal care and night check-ins. Their caregiver treated Mom with so much gentle respect."
               </p>
             </div>
-            <div class="pt-4 border-t border-gray-100 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-harbour-50 text-harbour font-bold flex items-center justify-center text-sm font-serif">
-                LM
-              </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center gap-3.5">
+              <!-- PLACEHOLDER TESTIMONIAL AVATAR 1 -->
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
+                alt="Laura M., Dartmouth"
+                class="w-12 h-12 rounded-full object-cover border border-gray-200 flex-shrink-0"
+                loading="lazy"
+              />
               <div>
-                <div class="text-xs font-bold text-harbour">Laura M.</div>
-                <div class="text-[11px] text-gray-500">Daughter & Primary Caregiver</div>
+                <div class="text-base font-bold text-harbour">Laura M.</div>
+                <div class="text-sm font-medium text-slate-600">Dartmouth: Post-hospital care</div>
               </div>
             </div>
           </div>
 
-          <!-- Testimonial 2 -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft flex flex-col justify-between">
+          <!-- Testimonial 2 (Robert C., Halifax: Companionship care) -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft flex flex-col justify-between">
             <div>
               <div class="flex items-center gap-1 text-amber-500 mb-4">
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -898,23 +936,27 @@
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
               </div>
-              <p class="text-sm text-gray-700 italic leading-relaxed mb-6">
+              <p class="text-base text-slate-800 italic leading-relaxed mb-6">
                 "Dad didn't want to admit he was lonely after losing my mother. Having our caregiver, David, visit three times a week for coffee, walks, and chess has transformed his mood. He looks forward to those afternoons like clockwork."
               </p>
             </div>
-            <div class="pt-4 border-t border-gray-100 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-sage-50 text-sage font-bold flex items-center justify-center text-sm font-serif">
-                RC
-              </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center gap-3.5">
+              <!-- PLACEHOLDER TESTIMONIAL AVATAR 2 -->
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+                alt="Robert C., Halifax"
+                class="w-12 h-12 rounded-full object-cover border border-gray-200 flex-shrink-0"
+                loading="lazy"
+              />
               <div>
-                <div class="text-xs font-bold text-harbour">Robert C.</div>
-                <div class="text-[11px] text-gray-500">Son, Nova Scotia</div>
+                <div class="text-base font-bold text-harbour">Robert C.</div>
+                <div class="text-sm font-medium text-slate-600">Halifax: Companionship care</div>
               </div>
             </div>
           </div>
 
-          <!-- Testimonial 3 -->
-          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-soft flex flex-col justify-between">
+          <!-- Testimonial 3 (Elena J., Bedford: Family respite care) -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-soft flex flex-col justify-between">
             <div>
               <div class="flex items-center gap-1 text-amber-500 mb-4">
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -923,17 +965,21 @@
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                 <i data-lucide="star" class="w-4 h-4 fill-current"></i>
               </div>
-              <p class="text-sm text-gray-700 italic leading-relaxed mb-6">
+              <p class="text-base text-slate-800 italic leading-relaxed mb-6">
                 "As a full-time working mom with an elderly father with mild dementia, I was burning out fast. Grace Harbour's respite care gave me room to breathe while knowing Dad was in loving, patient hands."
               </p>
             </div>
-            <div class="pt-4 border-t border-gray-100 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-coral-50 text-coral font-bold flex items-center justify-center text-sm font-serif">
-                EJ
-              </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center gap-3.5">
+              <!-- PLACEHOLDER TESTIMONIAL AVATAR 3 -->
+              <img
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&h=200&q=80"
+                alt="Elena J., Bedford"
+                class="w-12 h-12 rounded-full object-cover border border-gray-200 flex-shrink-0"
+                loading="lazy"
+              />
               <div>
-                <div class="text-xs font-bold text-harbour">Elena J.</div>
-                <div class="text-[11px] text-gray-500">Family Member</div>
+                <div class="text-base font-bold text-harbour">Elena J.</div>
+                <div class="text-sm font-medium text-slate-600">Bedford: Family respite care</div>
               </div>
             </div>
           </div>
@@ -945,78 +991,95 @@
 
     <!-- ══════════════════════════════════════════════
          FREQUENTLY ASKED QUESTIONS
+         - Added new FAQ: "How much does in-home care cost?" ($32 - $42/hr range)
+         - 16px body text & 4.5:1 contrast
     ══════════════════════════════════════════════ -->
     <section id="faq" class="py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-10">
         
         <div class="text-center mb-14 space-y-3">
-          <span class="text-sage text-xs font-bold uppercase tracking-widest">Common Questions</span>
+          <span class="text-sage-800 text-xs sm:text-sm font-bold uppercase tracking-widest bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+            Common Questions
+          </span>
           <h2 class="font-serif text-3xl sm:text-4xl text-harbour font-bold tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p class="text-gray-600 text-sm">
+          <p class="text-slate-700 text-base sm:text-lg">
             Have questions about home care options, pricing, or caregiver selection? Here are straightforward answers.
           </p>
         </div>
 
         <div class="space-y-4">
           
-          <details class="group bg-linen rounded-xl p-5 border border-gray-200/60 transition-colors">
-            <summary class="flex justify-between items-center font-bold text-harbour text-base cursor-pointer list-none">
+          <!-- NEW PRICING FAQ ITEM -->
+          <details class="group bg-linen rounded-xl p-5 border border-gray-200 transition-colors" open>
+            <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
+              <span>How much does in-home care cost?</span>
+              <span class="transition group-open:rotate-180">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+              </span>
+            </summary>
+            <p class="text-base text-slate-700 mt-3 leading-relaxed">
+              In Nova Scotia, our customized in-home care typically ranges between <strong>$32 and $42 per hour</strong>, depending on the level of care required (such as companionship versus specialized personal care or recovery assistance), shift duration, and visit frequency. During your Free In-Home Assessment, we provide a completely transparent, personalized quote with no hidden fees and no long-term contracts.
+            </p>
+          </details>
+
+          <details class="group bg-linen rounded-xl p-5 border border-gray-200 transition-colors">
+            <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
               <span>How quickly can care services begin?</span>
               <span class="transition group-open:rotate-180">
                 <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
               </span>
             </summary>
-            <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+            <p class="text-base text-slate-700 mt-3 leading-relaxed">
               In most circumstances, we can conduct an in-home assessment and place a dedicated caregiver within 24 to 48 hours. For hospital discharge recovery and urgent situations, same-day coordination can often be arranged.
             </p>
           </details>
 
-          <details class="group bg-linen rounded-xl p-5 border border-gray-200/60 transition-colors">
-            <summary class="flex justify-between items-center font-bold text-harbour text-base cursor-pointer list-none">
+          <details class="group bg-linen rounded-xl p-5 border border-gray-200 transition-colors">
+            <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
               <span>Are your caregivers bonded, insured, and background checked?</span>
               <span class="transition group-open:rotate-180">
                 <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
               </span>
             </summary>
-            <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+            <p class="text-base text-slate-700 mt-3 leading-relaxed">
               Yes, 100%. Every caregiver employed by Grace Harbour undergoes strict criminal record and vulnerable sector checks, credential verification, character reference audits, and is covered by comprehensive commercial general liability insurance.
             </p>
           </details>
 
-          <details class="group bg-linen rounded-xl p-5 border border-gray-200/60 transition-colors">
-            <summary class="flex justify-between items-center font-bold text-harbour text-base cursor-pointer list-none">
+          <details class="group bg-linen rounded-xl p-5 border border-gray-200 transition-colors">
+            <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
               <span>Do you require long-term contracts?</span>
               <span class="transition group-open:rotate-180">
                 <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
               </span>
             </summary>
-            <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+            <p class="text-base text-slate-700 mt-3 leading-relaxed">
               No. We believe care should always adapt to your family's needs. We do not lock you into rigid long-term contracts. You can increase, decrease, pause, or adjust hours as your loved one’s health and lifestyle evolve.
             </p>
           </details>
 
-          <details class="group bg-linen rounded-xl p-5 border border-gray-200/60 transition-colors">
-            <summary class="flex justify-between items-center font-bold text-harbour text-base cursor-pointer list-none">
+          <details class="group bg-linen rounded-xl p-5 border border-gray-200 transition-colors">
+            <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
               <span>How do you match a caregiver with my loved one?</span>
               <span class="transition group-open:rotate-180">
                 <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
               </span>
             </summary>
-            <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+            <p class="text-base text-slate-700 mt-3 leading-relaxed">
               During our Free In-Home Assessment, we assess not just physical care needs, but personality, life history, hobbies, and communication style. We then pair your loved one with a caregiver who fits their personality and interests, ensuring genuine warmth and companionship.
             </p>
           </details>
 
-          <details class="group bg-linen rounded-xl p-5 border border-gray-200/60 transition-colors">
-            <summary class="flex justify-between items-center font-bold text-harbour text-base cursor-pointer list-none">
+          <details class="group bg-linen rounded-xl p-5 border border-gray-200 transition-colors">
+            <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
               <span>What regions in Nova Scotia do you serve?</span>
               <span class="transition group-open:rotate-180">
                 <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
               </span>
             </summary>
-            <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+            <p class="text-base text-slate-700 mt-3 leading-relaxed">
               We provide care services across Halifax Regional Municipality (Halifax, Dartmouth, Bedford, Sackville) and surrounding Nova Scotia communities. Please contact our care intake line at (604) 379-4810 to confirm availability in your specific area.
             </p>
           </details>
@@ -1028,23 +1091,27 @@
 
     <!-- ══════════════════════════════════════════════
          FREE IN-HOME ASSESSMENT INTAKE FORM
+         - Auto-filled by quiz and service links
+         - Accessible 16px body text & 14px labels
     ══════════════════════════════════════════════ -->
     <section id="assessment" class="py-20 bg-linen relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div class="bg-white rounded-3xl border border-gray-200/80 shadow-card p-8 sm:p-12 lg:p-16">
+        <div class="bg-white rounded-3xl border border-gray-200 shadow-card p-8 sm:p-12 lg:p-16">
           <div class="grid lg:grid-cols-12 gap-12">
             
             <!-- Left Info Panel -->
             <div class="lg:col-span-5 space-y-6">
-              <span class="text-coral text-xs font-bold uppercase tracking-widest">Complimentary In-Home Visit</span>
+              <span class="text-coral-700 text-xs sm:text-sm font-bold uppercase tracking-widest bg-coral-50 px-3 py-1 rounded-full border border-coral-200">
+                Complimentary In-Home Visit
+              </span>
               <h2 class="font-serif text-3xl sm:text-4xl text-harbour font-bold tracking-tight">
                 Schedule Your Free In-Home Assessment
               </h2>
-              <p class="text-gray-600 text-sm leading-relaxed">
+              <p class="text-slate-700 text-base leading-relaxed">
                 Take the first step toward peace of mind. We will visit with your family, listen to your concerns, review your home routine, and create a personalized Care Blueprint—at zero cost or obligation.
               </p>
 
-              <div class="space-y-4 pt-4 border-t border-gray-100 text-xs text-gray-700">
+              <div class="space-y-4 pt-4 border-t border-gray-100 text-sm font-medium text-slate-700">
                 <div class="flex items-center gap-3">
                   <div class="w-8 h-8 rounded-full bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
                     <i data-lucide="check" class="w-4 h-4"></i>
@@ -1055,7 +1122,7 @@
                   <div class="w-8 h-8 rounded-full bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
                     <i data-lucide="check" class="w-4 h-4"></i>
                   </div>
-                  <span>Clear, transparent hourly rates with no hidden fees</span>
+                  <span>Clear hourly rates ($32 - $42/hr) with no hidden fees</span>
                 </div>
                 <div class="flex items-center gap-3">
                   <div class="w-8 h-8 rounded-full bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
@@ -1066,10 +1133,10 @@
               </div>
 
               <!-- Direct Call Card -->
-              <div class="p-5 rounded-2xl bg-harbour text-white space-y-2 mt-6">
-                <div class="text-xs text-sage-200 font-semibold uppercase">Prefer to speak directly?</div>
-                <div class="text-lg font-serif font-bold">Call Our Care Team Anytime</div>
-                <a href="tel:6043794810" class="inline-flex items-center gap-2 text-coral hover:text-white font-bold text-lg pt-1 transition-colors">
+              <div class="p-6 rounded-2xl bg-harbour text-white space-y-2 mt-6">
+                <div class="text-sm text-sage-200 font-semibold uppercase">Prefer to speak directly?</div>
+                <div class="text-xl font-serif font-bold">Call Our Care Team Anytime</div>
+                <a href="tel:6043794810" class="inline-flex items-center gap-2 text-coral hover:text-white font-bold text-xl pt-1 transition-colors">
                   <i data-lucide="phone-call" class="w-5 h-5"></i>
                   <span>(604) 379-4810</span>
                 </a>
@@ -1077,101 +1144,108 @@
             </div>
 
             <!-- Right Form -->
-            <div class="lg:col-span-7 bg-linen/50 rounded-2xl p-6 sm:p-8 border border-gray-100">
+            <div class="lg:col-span-7 bg-linen/50 rounded-2xl p-6 sm:p-8 border border-gray-200">
+              
+              <!-- Quiz Pre-fill Banner (Hidden initially) -->
+              <div id="quizAppliedNotice" class="hidden mb-4 p-3.5 rounded-xl bg-sage-100 border border-sage-300 text-sm text-sage-800 font-medium flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-5 h-5 text-sage flex-shrink-0"></i>
+                <span id="quizAppliedText">Your care quiz recommendations have been pre-filled below!</span>
+              </div>
+
               <form id="assessmentForm" onsubmit="handleAssessmentSubmit(event)" class="space-y-4">
                 <div class="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block text-xs font-semibold text-gray-700 mb-1">Your Full Name *</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">Your Full Name *</label>
                     <input
                       type="text"
                       id="clientName"
                       required
                       placeholder="e.g. Sarah Miller"
-                      class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
                     />
                   </div>
                   <div>
-                    <label class="block text-xs font-semibold text-gray-700 mb-1">Phone Number *</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">Phone Number *</label>
                     <input
                       type="tel"
                       id="clientPhone"
                       required
                       placeholder="e.g. (902) 555-0192"
-                      class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
                     />
                   </div>
                 </div>
 
                 <div class="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block text-xs font-semibold text-gray-700 mb-1">Email Address *</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">Email Address *</label>
                     <input
                       type="email"
                       id="clientEmail"
                       required
                       placeholder="e.g. sarah@example.com"
-                      class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
                     />
                   </div>
                   <div>
-                    <label class="block text-xs font-semibold text-gray-700 mb-1">City / Region in Nova Scotia *</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">City / Region in Nova Scotia *</label>
                     <input
                       type="text"
                       id="clientLocation"
                       required
                       placeholder="e.g. Halifax / Dartmouth / Bedford"
-                      class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
                     />
                   </div>
                 </div>
 
                 <div class="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label class="block text-xs font-semibold text-gray-700 mb-1">Care Required For</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">Care Required For</label>
                     <select
                       id="careFor"
-                      class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none"
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none"
                     >
                       <option value="Mother / Father">Mother / Father</option>
                       <option value="Spouse / Partner">Spouse / Partner</option>
                       <option value="Myself">Myself</option>
-                      <option value="Other Family Member">Other Family Member</option>
+                      <option value="Other Relative">Other Relative</option>
                     </select>
                   </div>
                   <div>
-                    <label class="block text-xs font-semibold text-gray-700 mb-1">Primary Type of Support</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">Primary Type of Support</label>
                     <select
                       id="careService"
-                      class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none"
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none"
                     >
                       <option value="Personal Care & Daily Living">Personal Care & Daily Living</option>
                       <option value="Companionship & Connection">Companionship & Connection</option>
                       <option value="Post-Hospital Recovery">Post-Hospital Recovery</option>
                       <option value="Household Support & Meals">Household Support & Meals</option>
-                      <option value="Medication Assistance">Medication Assistance</option>
+                      <option value="Medication Reminders">Medication Reminders</option>
                       <option value="Family Respite Relief">Family Respite Relief</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
-                  <label class="block text-xs font-semibold text-gray-700 mb-1">Tell Us About Your Situation & Ideal Schedule</label>
+                  <label class="block text-sm font-bold text-slate-700 mb-1.5">Tell Us About Your Situation & Ideal Schedule</label>
                   <textarea
                     id="careNotes"
                     rows="3"
                     placeholder="Briefly describe any mobility needs, medical conditions, or preferred visit times..."
-                    class="w-full bg-white text-gray-900 text-sm rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                    class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  class="w-full py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2"
+                  class="w-full py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base sm:text-lg shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2"
                 >
                   <i data-lucide="calendar-check" class="w-5 h-5"></i>
                   <span>Request Free In-Home Assessment</span>
                 </button>
-                <p class="text-[11px] text-gray-500 text-center">
+                <p class="text-xs text-slate-500 text-center font-medium">
                   We respect your privacy. Your information is strictly confidential and never shared.
                 </p>
               </form>
@@ -1182,12 +1256,12 @@
                   <i data-lucide="check-circle" class="w-8 h-8"></i>
                 </div>
                 <h3 class="font-serif text-2xl font-bold text-harbour">Thank You! Your Request is Received.</h3>
-                <p class="text-sm text-gray-600 max-w-md mx-auto">
+                <p class="text-base text-slate-700 max-w-md mx-auto">
                   A Grace Harbour Care Coordinator will reach out to you within 2 business hours to schedule your complimentary in-home assessment.
                 </p>
                 <div class="pt-2">
-                  <a href="tel:6043794810" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-harbour text-white text-sm font-semibold">
-                    <i data-lucide="phone" class="w-4 h-4"></i> Call Directly: (604) 379-4810
+                  <a href="tel:6043794810" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-harbour text-white text-base font-bold">
+                    <i data-lucide="phone" class="w-5 h-5"></i> Call Directly: (604) 379-4810
                   </a>
                 </div>
               </div>
@@ -1201,6 +1275,7 @@
 
     <!-- ══════════════════════════════════════════════
          SITE-WIDE 12-COLUMN RESPONSIVE FOOTER
+         - Accessible contrast and legible typography
     ══════════════════════════════════════════════ -->
     <footer id="contact" class="bg-harbour-900 text-gray-300 pt-16 pb-12 border-t border-harbour-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
@@ -1214,13 +1289,13 @@
               </div>
               <div>
                 <span class="font-serif text-2xl font-bold tracking-tight text-white block leading-none">Grace Harbour</span>
-                <span class="text-[10px] font-sans font-semibold tracking-wider text-sage-200 uppercase mt-0.5 block">Home Health</span>
+                <span class="text-xs font-sans font-semibold tracking-wider text-sage-200 uppercase mt-0.5 block">Home Health</span>
               </div>
             </div>
-            <p class="text-xs text-gray-400 max-w-sm leading-relaxed">
+            <p class="text-sm text-slate-300 max-w-sm leading-relaxed">
               Nova Scotia’s trusted partner for compassionate, individualized in-home care. Upholding dignity, independence, and comfort for seniors and peace of mind for families.
             </p>
-            <div class="pt-2 flex items-center gap-3 text-xs text-gray-400">
+            <div class="pt-2 flex items-center gap-3 text-xs sm:text-sm text-slate-400 font-medium">
               <span class="inline-flex items-center gap-1"><i data-lucide="shield" class="w-3.5 h-3.5 text-sage"></i> Bonded & Insured</span>
               <span>•</span>
               <span>Vetted Caregivers</span>
@@ -1231,10 +1306,10 @@
 
           <!-- Services Column (Col 5-7) -->
           <div class="lg:col-span-3 sm:col-span-1">
-            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/50 mb-4">
+            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/70 mb-4">
               Care Services
             </div>
-            <ul class="space-y-2.5 text-xs">
+            <ul class="space-y-3 text-sm">
               <li><a href="#services" class="hover:text-white transition-colors">Personal Care & Hygiene</a></li>
               <li><a href="#services" class="hover:text-white transition-colors">Companionship & Social Support</a></li>
               <li><a href="#services" class="hover:text-white transition-colors">Household Support & Meal Prep</a></li>
@@ -1247,13 +1322,13 @@
 
           <!-- Company Column (Col 8-9) -->
           <div class="lg:col-span-2 sm:col-span-1">
-            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/50 mb-4">
+            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/70 mb-4">
               Quick Links
             </div>
-            <ul class="space-y-2.5 text-xs">
-              <li><a href="#approach" class="hover:text-white transition-colors">Our Approach (4 Steps)</a></li>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#approach" class="hover:text-white transition-colors">How It Works (4 Steps)</a></li>
               <li><a href="#why-us" class="hover:text-white transition-colors">Why Grace Harbour</a></li>
-              <li><a href="#testimonials" class="hover:text-white transition-colors">Client Testimonials</a></li>
+              <li><a href="#testimonials" class="hover:text-white transition-colors">Family Testimonials</a></li>
               <li><a href="#faq" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
               <li><a href="#assessment" class="hover:text-white transition-colors">Book Free Assessment</a></li>
               <li><a href="mailto:info@graceharbourhealth.ca" class="hover:text-white transition-colors">Careers & Caregiver Jobs</a></li>
@@ -1262,13 +1337,13 @@
 
           <!-- Contact Details (Col 10-12) -->
           <div class="lg:col-span-3 sm:col-span-2">
-            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/50 mb-4">
+            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/70 mb-4">
               Direct Contact
             </div>
-            <ul class="space-y-3 text-xs">
+            <ul class="space-y-3 text-sm">
               <li class="flex items-start gap-2.5">
                 <i data-lucide="phone" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
-                <a href="tel:6043794810" class="hover:text-white font-medium text-sm transition-colors">(604) 379-4810</a>
+                <a href="tel:6043794810" class="hover:text-white font-bold text-base transition-colors">(604) 379-4810</a>
               </li>
               <li class="flex items-start gap-2.5">
                 <i data-lucide="mail" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
@@ -1276,23 +1351,23 @@
               </li>
               <li class="flex items-start gap-2.5">
                 <i data-lucide="map-pin" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
-                <span class="text-gray-400">Serving Halifax Regional Municipality & surrounding Nova Scotia communities.</span>
+                <span class="text-slate-300">Serving Halifax Regional Municipality & surrounding Nova Scotia communities.</span>
               </li>
               <li class="flex items-start gap-2.5">
                 <i data-lucide="clock" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
-                <span class="text-gray-400">Available 24 Hours / 7 Days a Week</span>
+                <span class="text-slate-300">Available 24 Hours / 7 Days a Week</span>
               </li>
             </ul>
           </div>
 
         </div>
 
-        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
           <p>© 2026 Grace Harbour Home Health Inc. All rights reserved. Nova Scotia, Canada.</p>
           <div class="flex items-center gap-6">
-            <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
-            <a href="#" class="hover:text-gray-400 transition-colors">Terms of Service</a>
-            <a href="tel:6043794810" class="hover:text-coral font-semibold">24/7 Care Intake: (604) 379-4810</a>
+            <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+            <a href="tel:6043794810" class="hover:text-coral font-bold">24/7 Care Intake: (604) 379-4810</a>
           </div>
         </div>
       </div>
@@ -1323,31 +1398,65 @@
         }
       }
 
-      // Handle Care Quiz Recommendation
+      // Pre-fill specific service from service cards
+      function prefillService(serviceName) {
+        const careServiceSelect = document.getElementById("careService");
+        if (careServiceSelect) {
+          careServiceSelect.value = serviceName;
+        }
+        const notice = document.getElementById("quizAppliedNotice");
+        const noticeText = document.getElementById("quizAppliedText");
+        if (notice && noticeText) {
+          noticeText.textContent = `Inquiring about: ${serviceName}`;
+          notice.classList.remove("hidden");
+        }
+      }
+
+      // Handle Care Quiz Recommendation: Scrolls to form and pre-fills
       function handleQuizSubmit(e) {
         e.preventDefault();
         const recipient = document.getElementById("quizRecipient").value;
         const service = document.getElementById("quizService").value;
         const timeline = document.getElementById("quizTimeline").value;
 
-        const resultBox = document.getElementById("quizResultBox");
-        const resultText = document.getElementById("quizResultText");
-
-        resultText.innerHTML = `Based on your selection for <strong>${recipient}</strong> needing <strong>${service}</strong> (${timeline}), a personalized 4-step care plan with a dedicated caregiver match is available.`;
-        resultBox.classList.remove("hidden");
-
-        // Pre-fill assessment form below
+        // Pre-fill assessment form fields
         const careForSelect = document.getElementById("careFor");
         if (careForSelect) {
           if (recipient.includes("Parent")) careForSelect.value = "Mother / Father";
           else if (recipient.includes("Spouse")) careForSelect.value = "Spouse / Partner";
           else if (recipient.includes("Myself")) careForSelect.value = "Myself";
+          else careForSelect.value = "Other Relative";
+        }
+
+        const careServiceSelect = document.getElementById("careService");
+        if (careServiceSelect) {
+          careServiceSelect.value = service;
         }
 
         const notesField = document.getElementById("careNotes");
         if (notesField) {
-          notesField.value = `[Quiz Request] Care for: ${recipient} | Priority: ${service} | Timeline: ${timeline}`;
+          notesField.value = `[Quiz Request] Care for: ${recipient} | Priority: ${service} | Desired Start: ${timeline}`;
         }
+
+        // Show banner in assessment form
+        const notice = document.getElementById("quizAppliedNotice");
+        const noticeText = document.getElementById("quizAppliedText");
+        if (notice && noticeText) {
+          noticeText.textContent = `Quiz applied: Care for ${recipient} • ${service} • Starting ${timeline}`;
+          notice.classList.remove("hidden");
+        }
+
+        // Smooth scroll directly to assessment form
+        const assessmentSection = document.getElementById("assessment");
+        if (assessmentSection) {
+          assessmentSection.scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Focus client name after scroll
+        setTimeout(() => {
+          const clientNameInput = document.getElementById("clientName");
+          if (clientNameInput) clientNameInput.focus();
+        }, 600);
       }
 
       // Handle Assessment Form Submission
@@ -1391,4 +1500,3 @@
     </script>
   </body>
 </html>
-
