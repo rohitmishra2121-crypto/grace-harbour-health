@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In-Home Senior Care Services (V2) | Grace Harbour Home Health Nova Scotia</title>
+    <meta
+      name="description"
+      content="Browse all in-home senior care services by Grace Harbour across Nova Scotia. Photo-rich service catalog featuring personal care, companionship, meal prep, post-hospital recovery, and respite."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rohitmishra2121-crypto.github.io/grace-harbour-health/services-v2" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="In-Home Senior Care Services Catalog | Grace Harbour Home Health" />
+    <meta
+      property="og:description"
+      content="Explore our full visual catalog of personalized in-home senior care services in Nova Scotia. Vetted caregivers, flexible scheduling, and no long-term contracts."
+    />
+    <meta property="og:url" content="https://rohitmishra2121-crypto.github.io/grace-harbour-health/services-v2" />
+    <meta property="og:image" content="images/consultation-care-plan.webp" />
+    <link rel="icon" type="image/webp" href="images/grace-harbour-logo.webp" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              harbour: {
+                DEFAULT: "#12384F",
+                50: "#F0F6F9",
+                100: "#E1EEF4",
+                200: "#C3DDE9",
+                600: "#1A4964",
+                700: "#12384F",
+                800: "#0D2737",
+                900: "#081822",
+              },
+              sage: {
+                DEFAULT: "#2E6F62",
+                50: "#F2F8F6",
+                100: "#E3F0ED",
+                200: "#C4DFD9",
+                600: "#2E6F62",
+                700: "#24574D",
+                800: "#1A3E37",
+              },
+              coral: {
+                DEFAULT: "#D96B43",
+                50: "#FCF3EE",
+                100: "#F9E4DA",
+                500: "#D96B43",
+                600: "#C25730",
+                700: "#A34320",
+              },
+              linen: {
+                DEFAULT: "#FAF8F5",
+                dark: "#F0ECE1",
+                muted: "#E8E2D5",
+              },
+            },
+            fontFamily: {
+              serif: ["Fraunces", "Georgia", "serif"],
+              sans: ["Plus Jakarta Sans", "system-ui", "-apple-system", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 10px 30px -5px rgba(18, 56, 79, 0.08)",
+              card: "0 16px 40px -10px rgba(18, 56, 79, 0.12)",
+              glow: "0 0 25px rgba(217, 107, 67, 0.25)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <style>
+      .service-filter-btn.active {
+        background-color: #12384F;
+        color: #ffffff;
+        border-color: #12384F;
+      }
+      .card-zoom-img {
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .group:hover .card-zoom-img {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-slate-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
+    
+    <!-- ═══════════════════════════════════════════
+         TOP ANNOUNCEMENT BAR & VERSION SWITCHER
+    ═══════════════════════════════════════════ -->
+    <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sage-600/40 text-sage-100 text-xs font-semibold border border-sage-500/50">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Nova Scotia In-Home Care Catalog (V2)
+          </span>
+          <span class="text-slate-200 hidden md:inline text-sm">Accepting New Clients Across Halifax &amp; HRM</span>
+        </div>
+        <div class="flex items-center gap-4 text-sm font-medium">
+          <a href="services.html" class="text-xs text-sage-200 hover:text-white underline">View Version 1 Layout</a>
+          <span class="text-white/30 hidden sm:inline">|</span>
+          <a href="tel:6043794810" class="flex items-center gap-2 text-white hover:text-coral transition-colors font-semibold">
+            <i data-lucide="phone-call" class="w-4 h-4 text-coral"></i>
+            <span>Care Team: <strong>(604) 379-4810</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         STICKY NAVIGATION HEADER
+    ═══════════════════════════════════════════ -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center group flex-shrink-0" aria-label="Grace Harbour Home Health Homepage">
+            <img
+              src="images/grace-harbour-logo.webp"
+              alt="Grace Harbour Home Health"
+              class="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105"
+            />
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden min-[1100px]:flex items-center gap-7 text-base font-semibold text-slate-700">
+            <a href="services.html" class="whitespace-nowrap text-harbour border-b-2 border-coral pb-1 transition-colors">Services (Catalog V2)</a>
+            <a href="personal-care.html" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Personal Care</a>
+            <a href="index.html#approach" class="whitespace-nowrap hover:text-harbour transition-colors py-2">How It Works</a>
+            <a href="index.html#why-us" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Why Us</a>
+            <a href="#faq" class="whitespace-nowrap hover:text-harbour transition-colors py-2">FAQs</a>
+            <a href="#contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
+          </nav>
+
+          <!-- Single Header CTA Button -->
+          <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
+            <a
+              href="#assessment"
+              class="bg-coral hover:bg-coral-600 text-white font-semibold text-sm sm:text-base px-5 py-2.5 rounded-lg shadow-sm hover:shadow-glow transition-all flex items-center gap-2 whitespace-nowrap"
+            >
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              <span>Book Free Assessment</span>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Toggle (< 1100px) -->
+          <button
+            id="mobileMenuBtn"
+            onclick="toggleMobileMenu()"
+            class="min-[1100px]:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden min-[1100px]:hidden border-t border-gray-100 py-4 px-2 space-y-2 text-base font-semibold text-slate-700 bg-white">
+          <a href="services.html" onclick="toggleMobileMenu()" class="block px-4 py-2.5 bg-linen text-harbour rounded-lg font-bold">Services Catalog (V2)</a>
+          <a href="services.html" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Services Overview (V1)</a>
+          <a href="personal-care.html" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Personal Care &amp; Daily Living</a>
+          <a href="index.html#approach" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">How It Works</a>
+          <a href="index.html#why-us" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Why Us</a>
+          <a href="#faq" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">FAQs</a>
+          <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 hover:bg-linen rounded-lg">Contact Us</a>
+          <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
+            <a
+              href="tel:6043794810"
+              class="flex items-center justify-center gap-2 py-3 rounded-lg border border-harbour text-harbour font-bold text-base"
+            >
+              <i data-lucide="phone" class="w-4 h-4 text-coral"></i> Call (604) 379-4810
+            </a>
+            <a
+              href="#assessment"
+              onclick="toggleMobileMenu()"
+              class="text-center py-3 rounded-lg bg-coral text-white font-bold text-base shadow-sm"
+            >
+              Schedule Free In-Home Assessment
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ═══════════════════════════════════════════
+           HERO SECTION: PHOTO-RICH SERVICE CATALOG
+      ═══════════════════════════════════════════ -->
+      <section class="relative bg-gradient-to-b from-linen via-white to-linen/40 py-14 lg:py-18 overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-coral-100/40 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-sage-100/40 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <!-- Breadcrumb -->
+          <nav class="flex items-center gap-2 text-xs sm:text-sm text-slate-500 mb-6 font-medium" aria-label="Breadcrumb">
+            <a href="index.html" class="hover:text-harbour transition-colors">Home</a>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-400"></i>
+            <span class="text-harbour font-bold">Services Directory</span>
+          </nav>
+
+          <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-5 text-left">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-coral-200 shadow-xs text-xs sm:text-sm font-bold text-coral-700">
+                <span class="w-2.5 h-2.5 rounded-full bg-coral"></span>
+                Interactive In-Home Care Directory
+              </div>
+
+              <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-harbour font-bold tracking-tight leading-[1.12]">
+                Explore Our Complete <span class="text-coral italic">In-Home Care</span> Solutions
+              </h1>
+
+              <p class="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl">
+                Browse our specialized care programs designed to keep seniors safe, nourished, socially connected, and comfortable at home across Halifax Regional Municipality and surrounding Nova Scotia communities.
+              </p>
+
+              <!-- Trust Badges Row -->
+              <div class="flex flex-wrap items-center gap-4 pt-1 text-xs sm:text-sm font-semibold text-slate-700">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-sage"></i>
+                  <span>100% Bonded &amp; Insured</span>
+                </div>
+                <span class="text-gray-300">•</span>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="award" class="w-4 h-4 text-sage"></i>
+                  <span>Certified Support Workers</span>
+                </div>
+                <span class="text-gray-300">•</span>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="clock" class="w-4 h-4 text-sage"></i>
+                  <span>No Long-Term Contracts</span>
+                </div>
+              </div>
+
+              <!-- Quick CTAs -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+                <a
+                  href="#catalog"
+                  class="px-7 py-3.5 rounded-xl bg-harbour hover:bg-harbour-600 text-white font-bold text-base shadow-soft transition-all flex items-center justify-center gap-2"
+                >
+                  <i data-lucide="grid" class="w-5 h-5 text-sage-200"></i>
+                  <span>Browse Care Services</span>
+                </a>
+                <a
+                  href="#assessment"
+                  class="px-7 py-3.5 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2"
+                >
+                  <i data-lucide="calendar" class="w-5 h-5"></i>
+                  <span>Book Free Assessment</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Image: In-Home Consultation Photo from client website -->
+            <div class="lg:col-span-5">
+              <div class="relative mx-auto max-w-md lg:max-w-none">
+                <div class="relative rounded-2xl overflow-hidden shadow-card border-4 border-white bg-linen">
+                  <img
+                    src="images/consultation-care-plan.webp"
+                    alt="Grace Harbour care coordinator creating a customized in-home care plan with an elderly client"
+                    class="w-full h-[380px] sm:h-[430px] object-cover"
+                    loading="eager"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-harbour/95 via-harbour/50 to-transparent p-6 text-white">
+                    <span class="inline-block px-3 py-1 rounded bg-white/20 backdrop-blur-md text-xs font-semibold mb-1 uppercase tracking-wide">
+                      Personalized Care Blueprint
+                    </span>
+                    <div class="font-serif text-lg sm:text-xl font-bold leading-snug">
+                      "Every care plan is hand-crafted around your loved one’s personal routine."
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating Badge -->
+                <div class="hidden sm:flex absolute -bottom-4 -left-4 bg-white p-3.5 rounded-xl shadow-lg border border-gray-100 items-center gap-3 z-10">
+                  <div class="w-10 h-10 rounded-lg bg-coral/10 text-coral flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="tag" class="w-5 h-5 text-coral"></i>
+                  </div>
+                  <div>
+                    <div class="text-sm font-bold text-harbour">$32 – $42 / hour</div>
+                    <div class="text-xs text-slate-500">Transparent, all-inclusive rates</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════
+           SECTION: INTERACTIVE FILTER TABS & SERVICE CATALOG
+      ═══════════════════════════════════════════ -->
+      <section id="catalog" class="py-16 sm:py-20 bg-linen scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          
+          <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+            <span class="text-sage-800 text-xs sm:text-sm font-bold uppercase tracking-widest bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+              Care Catalog
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-harbour font-bold tracking-tight">
+              Select the Care Level Your Family Needs
+            </h2>
+            <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+              Click any category below to filter our care programs, or browse our full range of in-home support.
+            </p>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap items-center justify-center gap-2.5 mb-14">
+            <button
+              onclick="filterServices('all')"
+              id="filter-all"
+              class="service-filter-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border border-gray-300 transition-all shadow-xs"
+            >
+              All Care Programs (7)
+            </button>
+            <button
+              onclick="filterServices('hands-on')"
+              id="filter-hands-on"
+              class="service-filter-btn bg-white hover:bg-gray-100 text-slate-700 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border border-gray-300 transition-all shadow-xs"
+            >
+              Hands-On ADL &amp; Physical Care
+            </button>
+            <button
+              onclick="filterServices('social')"
+              id="filter-social"
+              class="service-filter-btn bg-white hover:bg-gray-100 text-slate-700 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border border-gray-300 transition-all shadow-xs"
+            >
+              Companionship &amp; Respite
+            </button>
+            <button
+              onclick="filterServices('household')"
+              id="filter-household"
+              class="service-filter-btn bg-white hover:bg-gray-100 text-slate-700 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border border-gray-300 transition-all shadow-xs"
+            >
+              Homemaking &amp; Medical Routines
+            </button>
+          </div>
+
+          <!-- ═══════════════════════════════════════════
+               SERVICE CARDS GRID (PHOTO-RICH ARCHITECTURE)
+          ═══════════════════════════════════════════ -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="servicesGrid">
+            
+            <!-- Card 1: Personal Care & Daily Living (Category: hands-on) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between" data-category="hands-on">
+              <div>
+                <!-- Photo Header -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <img
+                    src="images/caregiver-walker-support.webp"
+                    alt="Caregiver assisting elderly senior with walker mobility and personal support"
+                    class="card-zoom-img w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-coral text-white text-xs font-bold shadow-xs">
+                      Hands-On ADLs
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                    <div class="text-xs text-white/80 font-semibold uppercase tracking-wider">Starting at $32–$42/hr</div>
+                    <div class="font-serif text-lg font-bold leading-tight">Dignified Personal Care</div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-harbour-50 text-harbour flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="user-check" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">Personal Care &amp; Daily Living</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Respectful, patient assistance with intimate routines. Protecting bodily safety, modesty, and independence.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Bathing, showering &amp; sponge baths</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Dressing, buttoning, shoes &amp; grooming</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Discreet toileting &amp; incontinence support</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Bed &amp; chair sit-to-stand transfers</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="personal-care.html"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>Learn more</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Personal Care & Daily Living')"
+                  class="px-4 py-2 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Book Assessment
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Companionship & Social Support (Category: social) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between" data-category="social">
+              <div>
+                <!-- Photo Header: Senior Tea Scene from client site -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <img
+                    src="images/hero-caregiver-senior-tea.webp"
+                    alt="Caregiver and senior enjoying tea and conversation in the kitchen"
+                    class="card-zoom-img w-full h-full object-cover object-[50%_15%]"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-sage text-white text-xs font-bold shadow-xs">
+                      Social Vitality
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                    <div class="text-xs text-white/80 font-semibold uppercase tracking-wider">Hourly &amp; Shift Options</div>
+                    <div class="font-serif text-lg font-bold leading-tight">Companionship &amp; Friendship</div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">Companionship &amp; Social Support</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Combatting senior isolation with meaningful conversation, laughter, shared activities, and a dependable presence.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Engaging conversation, games &amp; crafts</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Neighborhood walks &amp; garden strolls</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Shared tea, lunch &amp; appetizing meals</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Tech help with family video calls</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Companionship & Connection')"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>Select service</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Companionship & Connection')"
+                  class="px-4 py-2 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Book Assessment
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Household Support & Meal Prep (Category: household) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between" data-category="household">
+              <div>
+                <!-- Photo Header: Home Kitchen Prep Scene -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1663126949923-0923b4217c90?auto=format&fit=crop&w=800&q=80"
+                    alt="Caregiver and senior cooking fresh, healthy home meals together in kitchen"
+                    class="card-zoom-img w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-amber-600 text-white text-xs font-bold shadow-xs">
+                      Homemaking
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                    <div class="text-xs text-white/80 font-semibold uppercase tracking-wider">Nutrition &amp; Safety</div>
+                    <div class="font-serif text-lg font-bold leading-tight">Meal Prep &amp; Household Help</div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">Household Support &amp; Meal Prep</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Keeping living spaces clean, hazard-free, and tidy, combined with freshly prepared meals tailored to dietary requirements.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Home-cooked diabetic &amp; low-sodium recipes</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Light housekeeping, sweeping &amp; dishwashing</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Fresh bed linens &amp; laundry service</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Grocery shopping &amp; pharmacy pickups</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Household Support & Meals')"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>Select service</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Household Support & Meals')"
+                  class="px-4 py-2 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Book Assessment
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Post-Hospital Recovery Care (Category: hands-on) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between" data-category="hands-on">
+              <div>
+                <!-- Photo Header: Transitional recovery support from client site archives -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <img
+                    src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80"
+                    alt="Caregiver helping senior sit comfortably during post-hospital recovery at home"
+                    class="card-zoom-img w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold shadow-xs">
+                      Transitional Care
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                    <div class="text-xs text-white/80 font-semibold uppercase tracking-wider">Fast 24–48h Placement</div>
+                    <div class="font-serif text-lg font-bold leading-tight">Post-Hospital Recovery Care</div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="activity" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">Post-Hospital Recovery Care</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Critical home support following hospital discharge or surgery to prevent falls, avoid complications, and reduce readmission risks.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Hip &amp; knee replacement mobility care</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Discharge order &amp; therapy exercise aid</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Vital sign logging &amp; wound site checks</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Transportation to specialist follow-ups</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Post-Hospital Recovery')"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>Select service</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Post-Hospital Recovery')"
+                  class="px-4 py-2 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Book Assessment
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Medication Reminders & Health Routines (Category: household) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between" data-category="household">
+              <div>
+                <!-- Photo Header: Consultation & Care Plan Scene from client site -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <img
+                    src="images/consultation-care-plan.webp"
+                    alt="Caregiver reviewing medication schedule and daily care plan with family"
+                    class="card-zoom-img w-full h-full object-cover object-[50%_30%]"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold shadow-xs">
+                      Daily Routine
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                    <div class="text-xs text-white/80 font-semibold uppercase tracking-wider">Family Peace of Mind</div>
+                    <div class="font-serif text-lg font-bold leading-tight">Medication &amp; Wellness Routines</div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="pill" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">Medication &amp; Wellness Reminders</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Reliable prompting for prescription medications, daily hydration tracking, and keeping critical health habits on track.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Timely dosage prompts with water</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Blister pack &amp; dosette box logging</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Hydration &amp; nutritional intake tracking</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Direct updates to adult children</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Medication Reminders')"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>Select service</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Medication Reminders')"
+                  class="px-4 py-2 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Book Assessment
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 6: Family Respite Care (Category: social) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between" data-category="social">
+              <div>
+                <!-- Photo Header: Hands held in companionship / family relief scene -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <img
+                    src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
+                    alt="Caregiver reassuring elderly senior with supportive hand hold"
+                    class="card-zoom-img w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-rose-600 text-white text-xs font-bold shadow-xs">
+                      Family Relief
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                    <div class="text-xs text-white/80 font-semibold uppercase tracking-wider">Burnout Prevention</div>
+                    <div class="font-serif text-lg font-bold leading-tight">Respite Care for Caregivers</div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="coffee" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">Family Respite Care</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Giving family caregivers a vital, guilt-free opportunity to rest, recharge, travel, or work, knowing their loved one is in compassionate hands.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> A few hours weekly for personal errands</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Overnight shifts so family can sleep soundly</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Weekend coverage for business or vacation</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Maintains loved one's exact habits</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Family Respite Relief')"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>Select service</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Family Respite Relief')"
+                  class="px-4 py-2 rounded-lg bg-coral hover:bg-coral-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Book Assessment
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 7: 24/7 Overnight & Continuous Care (Category: hands-on) -->
+            <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between md:col-span-2 lg:col-span-1" data-category="hands-on">
+              <div>
+                <!-- Photo Header: Nighttime comfort scene -->
+                <div class="relative h-56 overflow-hidden bg-harbour-900">
+                  <div class="w-full h-full bg-gradient-to-br from-harbour-900 via-harbour-800 to-harbour-700 flex items-center justify-center p-6 text-center text-white">
+                    <div class="space-y-2">
+                      <div class="w-12 h-12 rounded-full bg-white/10 mx-auto flex items-center justify-center text-coral">
+                        <i data-lucide="moon" class="w-6 h-6"></i>
+                      </div>
+                      <div class="font-serif text-xl font-bold">24-Hour Continuous Presence</div>
+                      <p class="text-xs text-slate-300">Awake night monitoring &amp; continuous coverage</p>
+                    </div>
+                  </div>
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-full bg-harbour-600 text-white text-xs font-bold shadow-xs">
+                      Round-the-Clock
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 space-y-3.5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-harbour-50 text-harbour flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="shield" class="w-4 h-4"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-harbour">24/7 &amp; Overnight Support</h3>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Continuous supervision for seniors with high fall risks, advanced dementia sundowning, or those requiring around-the-clock comfort at home.
+                  </p>
+                  <ul class="text-xs text-slate-700 space-y-2 pt-2 border-t border-gray-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Awake nighttime transfers &amp; wandering prevention</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Rotating consistent caregiver teams</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> True alternative to nursing home placement</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage flex-shrink-0"></i> Seamless coordination across HRM</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Buttons -->
+              <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between gap-3">
+                <a
+                  href="tel:6043794810"
+                  class="text-xs font-bold text-harbour hover:text-coral transition-colors flex items-center gap-1"
+                >
+                  <span>(604) 379-4810</span>
+                  <i data-lucide="phone" class="w-3.5 h-3.5 text-coral"></i>
+                </a>
+                <a
+                  href="#assessment"
+                  onclick="prefillService('Overnight & 24/7 Care')"
+                  class="px-4 py-2 rounded-lg bg-harbour hover:bg-harbour-600 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  Consult on 24/7
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════
+           SECTION: CARE LEVEL COMPARISON MATRIX
+      ═══════════════════════════════════════════ -->
+      <section class="py-16 sm:py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <span class="text-sage-800 text-xs sm:text-sm font-bold uppercase tracking-widest bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+              Side-by-Side Comparison
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-harbour font-bold tracking-tight">
+              Which Level of Care Does Your Loved One Need?
+            </h2>
+            <p class="text-slate-700 text-base leading-relaxed">
+              Use this quick reference to understand the boundaries and benefits of each care tier.
+            </p>
+          </div>
+
+          <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-xs">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="bg-harbour text-white font-serif text-base">
+                  <th class="p-4 sm:p-5 font-bold">Services &amp; Care Domains</th>
+                  <th class="p-4 sm:p-5 font-bold text-center border-l border-white/10">Companionship Support</th>
+                  <th class="p-4 sm:p-5 font-bold text-center border-l border-white/10 bg-sage-700">Personal Care (ADLs)</th>
+                  <th class="p-4 sm:p-5 font-bold text-center border-l border-white/10">Post-Hospital &amp; 24/7</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 bg-white text-slate-700">
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Social visits, conversation &amp; tea time</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Light housekeeping, dishes &amp; fresh linens</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Home-cooked meal prep &amp; grocery runs</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Hands-on shower, tub &amp; sponge bathing</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Dressing, buttoning, grooming &amp; oral care</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Discreet incontinence care &amp; toileting aid</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Physical bed-to-chair transfers &amp; walker aid</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Post-surgical rehab &amp; therapy exercise aid</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+                <tr class="hover:bg-linen/50 transition-colors">
+                  <td class="p-4 sm:p-5 font-bold text-harbour">Awake overnight fall monitoring</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100 bg-sage-50/50 text-slate-300">—</td>
+                  <td class="p-4 sm:p-5 text-center border-l border-gray-100"><i data-lucide="check" class="w-5 h-5 text-emerald-600 mx-auto"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 text-center">
+            <p class="text-xs sm:text-sm text-slate-600">
+              Not sure which level is appropriate? Our Registered Care Coordinators assess your family's routine during the free in-home visit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════
+           FAQS SECTION
+      ═══════════════════════════════════════════ -->
+      <section id="faq" class="py-16 sm:py-20 bg-linen scroll-mt-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12 space-y-3">
+            <span class="text-sage-800 text-xs sm:text-sm font-bold uppercase tracking-widest bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+              Clear &amp; Honest Answers
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-harbour font-bold tracking-tight">
+              Frequently Asked Questions About Our Care
+            </h2>
+            <p class="text-slate-700 text-base leading-relaxed">
+              Everything you need to know about setting up care with Grace Harbour.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group bg-white rounded-xl p-5 border border-gray-200 shadow-xs transition-colors" open>
+              <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
+                <span>Can we combine multiple services into one care visit?</span>
+                <span class="transition group-open:rotate-180">
+                  <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                </span>
+              </summary>
+              <p class="text-base text-slate-700 mt-3 leading-relaxed">
+                Yes, absolutely. In fact, most families do. A typical 3-hour morning visit often begins with bathing and dressing assistance, followed by preparing a wholesome breakfast, and finishes with a shared cup of tea or light laundry. Your hourly rate stays the same.
+              </p>
+            </details>
+
+            <details class="group bg-white rounded-xl p-5 border border-gray-200 shadow-xs transition-colors">
+              <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
+                <span>Are there contracts or minimum hour commitments?</span>
+                <span class="transition group-open:rotate-180">
+                  <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                </span>
+              </summary>
+              <p class="text-base text-slate-700 mt-3 leading-relaxed">
+                We have zero long-term contracts. Visits typically have a 2 to 3 hour minimum to ensure our caregivers can deliver unhurried, meaningful care, but you can scale your schedule up, down, or pause care anytime without financial penalties.
+              </p>
+            </details>
+
+            <details class="group bg-white rounded-xl p-5 border border-gray-200 shadow-xs transition-colors">
+              <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
+                <span>How are your caregivers vetted and bonded?</span>
+                <span class="transition group-open:rotate-180">
+                  <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                </span>
+              </summary>
+              <p class="text-base text-slate-700 mt-3 leading-relaxed">
+                Every employee undergoes certified criminal background and vulnerable sector checks, character reference verifications, and CPR/First Aid certification audits. All personnel are covered under comprehensive commercial general liability and workers' compensation insurance.
+              </p>
+            </details>
+
+            <details class="group bg-white rounded-xl p-5 border border-gray-200 shadow-xs transition-colors">
+              <summary class="flex justify-between items-center font-bold text-harbour text-base sm:text-lg cursor-pointer list-none">
+                <span>What areas in Nova Scotia do you serve?</span>
+                <span class="transition group-open:rotate-180">
+                  <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                </span>
+              </summary>
+              <p class="text-base text-slate-700 mt-3 leading-relaxed">
+                We actively provide in-home care across Halifax Regional Municipality (Halifax, Dartmouth, Bedford, Sackville, Cole Harbour, Clayton Park) and surrounding Nova Scotia communities. Call our care intake team at (604) 379-4810 for prompt local scheduling.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════
+           ASSESSMENT INTAKE FORM
+      ═══════════════════════════════════════════ -->
+      <section id="assessment" class="py-20 bg-white relative scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div class="bg-linen rounded-3xl border border-gray-200 shadow-card p-8 sm:p-12 lg:p-16">
+            <div class="grid lg:grid-cols-12 gap-12">
+              
+              <!-- Left Info Panel -->
+              <div class="lg:col-span-5 space-y-6">
+                <span class="text-coral-700 text-xs sm:text-sm font-bold uppercase tracking-widest bg-coral-50 px-3 py-1 rounded-full border border-coral-200">
+                  Complimentary Consultation
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-harbour font-bold tracking-tight">
+                  Schedule Your Free In-Home Assessment
+                </h2>
+                <p class="text-slate-700 text-base leading-relaxed">
+                  Take the first step toward peace of mind. We will visit with your family, listen to your concerns, review home safety, and create a personalized Care Blueprint—at zero cost or obligation.
+                </p>
+
+                <div class="space-y-4 pt-4 border-t border-gray-200 text-sm font-medium text-slate-700">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <span>No obligation, 100% confidential consultation</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <span>Clear hourly rates ($32 - $42/hr) with no hidden fees</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-sage-50 text-sage flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="check" class="w-4 h-4"></i>
+                    </div>
+                    <span>Fast care deployment within 24 to 48 hours</span>
+                  </div>
+                </div>
+
+                <!-- Direct Call Card -->
+                <div class="p-6 rounded-2xl bg-harbour text-white space-y-2 mt-6">
+                  <div class="text-sm text-sage-200 font-semibold uppercase">Prefer to speak directly?</div>
+                  <div class="text-xl font-serif font-bold">Call Our Care Team Anytime</div>
+                  <a href="tel:6043794810" class="inline-flex items-center gap-2 text-coral hover:text-white font-bold text-xl pt-1 transition-colors">
+                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                    <span>(604) 379-4810</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Form -->
+              <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-xs">
+                
+                <!-- Notice Banner -->
+                <div id="serviceNotice" class="hidden mb-4 p-3.5 rounded-xl bg-sage-100 border border-sage-300 text-sm text-sage-800 font-medium flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-sage flex-shrink-0"></i>
+                  <span id="serviceNoticeText">Selected service pre-filled below!</span>
+                </div>
+
+                <form id="catalogAssessmentForm" onsubmit="handleCatalogSubmit(event)" class="space-y-4">
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-sm font-bold text-slate-700 mb-1.5">Your Full Name *</label>
+                      <input
+                        type="text"
+                        id="clientName"
+                        required
+                        placeholder="e.g. Sarah Miller"
+                        class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-bold text-slate-700 mb-1.5">Phone Number *</label>
+                      <input
+                        type="tel"
+                        id="clientPhone"
+                        required
+                        placeholder="e.g. (902) 555-0192"
+                        class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-sm font-bold text-slate-700 mb-1.5">Email Address *</label>
+                      <input
+                        type="email"
+                        id="clientEmail"
+                        required
+                        placeholder="e.g. sarah@example.com"
+                        class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-bold text-slate-700 mb-1.5">City / Region in Nova Scotia *</label>
+                      <input
+                        type="text"
+                        id="clientLocation"
+                        required
+                        placeholder="e.g. Halifax / Dartmouth / Bedford"
+                        class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-sm font-bold text-slate-700 mb-1.5">Care Required For</label>
+                      <select
+                        id="careFor"
+                        class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none"
+                      >
+                        <option value="Mother / Father">Mother / Father</option>
+                        <option value="Spouse / Partner">Spouse / Partner</option>
+                        <option value="Myself">Myself</option>
+                        <option value="Other Relative">Other Relative</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="block text-sm font-bold text-slate-700 mb-1.5">Selected Program</label>
+                      <select
+                        id="careService"
+                        class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none"
+                      >
+                        <option value="Personal Care & Daily Living">Personal Care &amp; Daily Living</option>
+                        <option value="Companionship & Connection">Companionship &amp; Social Support</option>
+                        <option value="Household Support & Meals">Household Support &amp; Meals</option>
+                        <option value="Post-Hospital Recovery">Post-Hospital Recovery Care</option>
+                        <option value="Medication Reminders">Medication Reminders</option>
+                        <option value="Family Respite Relief">Family Respite Relief</option>
+                        <option value="Overnight & 24/7 Care">Overnight &amp; 24/7 Care</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1.5">Tell Us About Your Loved One's Needs &amp; Ideal Schedule</label>
+                    <textarea
+                      id="careNotes"
+                      rows="3"
+                      placeholder="Briefly describe any mobility needs, medication schedules, or preferred days..."
+                      class="w-full bg-white text-gray-900 text-base rounded-lg border border-gray-300 p-3 focus:border-sage focus:outline-none focus:ring-1 focus:ring-sage"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full py-4 rounded-xl bg-coral hover:bg-coral-600 text-white font-bold text-base sm:text-lg shadow-soft hover:shadow-glow transition-all flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                    <span>Request Free In-Home Assessment</span>
+                  </button>
+                  <p class="text-xs text-slate-500 text-center font-medium">
+                    Strictly confidential • Never shared with third parties
+                  </p>
+                </form>
+
+                <!-- Success View -->
+                <div id="formSuccessView" class="hidden text-center py-10 space-y-4">
+                  <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center">
+                    <i data-lucide="check-circle" class="w-8 h-8"></i>
+                  </div>
+                  <h3 class="font-serif text-2xl font-bold text-harbour">Thank You! Your Request is Received.</h3>
+                  <p class="text-base text-slate-700 max-w-md mx-auto">
+                    A Grace Harbour Care Coordinator will reach out to you within 2 business hours to schedule your complimentary in-home assessment.
+                  </p>
+                  <div class="pt-2">
+                    <a href="tel:6043794810" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-harbour text-white text-base font-bold">
+                      <i data-lucide="phone" class="w-5 h-5"></i> Call Directly: (604) 379-4810
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer id="contact" class="bg-harbour-900 text-gray-300 pt-16 pb-12 border-t border-harbour-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-harbour-800">
+          
+          <!-- Brand Column -->
+          <div class="lg:col-span-4 sm:col-span-2 space-y-4">
+            <a href="index.html" class="inline-block" aria-label="Grace Harbour Home Health Homepage">
+              <img
+                src="images/grace-harbour-logo-white.webp"
+                alt="Grace Harbour Home Health"
+                class="h-14 sm:h-16 w-auto object-contain"
+                loading="lazy"
+              />
+            </a>
+            <p class="text-sm text-slate-300 max-w-sm leading-relaxed">
+              Nova Scotia’s trusted partner for compassionate, individualized in-home care. Upholding dignity, independence, and comfort for seniors and peace of mind for families.
+            </p>
+            <div class="pt-2 flex items-center gap-3 text-xs sm:text-sm text-slate-400 font-medium">
+              <span class="inline-flex items-center gap-1"><i data-lucide="shield" class="w-3.5 h-3.5 text-sage"></i> Bonded &amp; Insured</span>
+              <span>•</span>
+              <span>Vetted Caregivers</span>
+              <span>•</span>
+              <span>Nova Scotia, Canada</span>
+            </div>
+          </div>
+
+          <!-- Services Column -->
+          <div class="lg:col-span-3 sm:col-span-1">
+            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/70 mb-4">
+              Care Services
+            </div>
+            <ul class="space-y-3 text-sm">
+              <li><a href="personal-care.html" class="hover:text-white text-coral-300 font-medium transition-colors">Personal Care &amp; Hygiene</a></li>
+              <li><a href="services.html" class="hover:text-white transition-colors">Services Catalog (V2)</a></li>
+              <li><a href="services.html" class="hover:text-white transition-colors">Services Overview (V1)</a></li>
+              <li><a href="services.html#companionship" class="hover:text-white transition-colors">Companionship &amp; Social Support</a></li>
+              <li><a href="services.html#household-meals" class="hover:text-white transition-colors">Household Support &amp; Meal Prep</a></li>
+              <li><a href="services.html#post-hospital" class="hover:text-white transition-colors">Post-Hospital Recovery Care</a></li>
+              <li><a href="services.html#respite-care" class="hover:text-white transition-colors">Family Respite Relief</a></li>
+            </ul>
+          </div>
+
+          <!-- Company Column -->
+          <div class="lg:col-span-2 sm:col-span-1">
+            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/70 mb-4">
+              Quick Links
+            </div>
+            <ul class="space-y-3 text-sm">
+              <li><a href="index.html#approach" class="hover:text-white transition-colors">How It Works</a></li>
+              <li><a href="index.html#why-us" class="hover:text-white transition-colors">Why Grace Harbour</a></li>
+              <li><a href="index.html#testimonials" class="hover:text-white transition-colors">Family Testimonials</a></li>
+              <li><a href="#faq" class="hover:text-white transition-colors">FAQs</a></li>
+              <li><a href="#assessment" class="hover:text-white transition-colors">Book Free Assessment</a></li>
+              <li><a href="mailto:info@graceharbourhealth.ca" class="hover:text-white transition-colors">Careers &amp; Caregiver Jobs</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="lg:col-span-3 sm:col-span-2">
+            <div class="font-sans text-xs font-bold uppercase tracking-widest text-white/70 mb-4">
+              Direct Contact
+            </div>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="phone" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
+                <a href="tel:6043794810" class="hover:text-white font-bold text-base transition-colors">(604) 379-4810</a>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="mail" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
+                <a href="mailto:info@graceharbourhealth.ca" class="hover:text-white transition-colors">info@graceharbourhealth.ca</a>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
+                <span class="text-slate-300">Serving Halifax Regional Municipality &amp; surrounding Nova Scotia communities.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="clock" class="w-4 h-4 text-coral flex-shrink-0 mt-0.5"></i>
+                <span class="text-slate-300">Available 24 Hours / 7 Days a Week</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
+          <p>© 2026 Grace Harbour Home Health Inc. All rights reserved. Nova Scotia, Canada.</p>
+          <div class="flex items-center gap-6">
+            <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+            <a href="tel:6043794810" class="hover:text-coral font-bold">24/7 Care Intake: (604) 379-4810</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════
+         INTERACTIVE SCRIPTS
+    ═══════════════════════════════════════════ -->
+    <script>
+      // Initialize Lucide Icons
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      });
+
+      // Mobile Menu Toggle
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const openIcon = document.getElementById("menuOpenIcon");
+        const closeIcon = document.getElementById("menuCloseIcon");
+        if (menu) {
+          menu.classList.toggle("hidden");
+          if (openIcon && closeIcon) {
+            openIcon.classList.toggle("hidden");
+            closeIcon.classList.toggle("hidden");
+          }
+        }
+      }
+
+      // Filter Services
+      function filterServices(category) {
+        // Update filter buttons
+        document.querySelectorAll(".service-filter-btn").forEach(btn => {
+          btn.classList.remove("active");
+          btn.classList.add("bg-white", "text-slate-700");
+        });
+        const activeBtn = document.getElementById("filter-" + category);
+        if (activeBtn) {
+          activeBtn.classList.add("active");
+          activeBtn.classList.remove("bg-white", "text-slate-700");
+        }
+
+        // Show/hide cards
+        const cards = document.querySelectorAll(".service-card");
+        cards.forEach(card => {
+          if (category === "all" || card.getAttribute("data-category") === category) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      // Pre-fill specific service
+      function prefillService(serviceName) {
+        const careServiceSelect = document.getElementById("careService");
+        if (careServiceSelect) {
+          careServiceSelect.value = serviceName;
+        }
+        const notice = document.getElementById("serviceNotice");
+        const noticeText = document.getElementById("serviceNoticeText");
+        if (notice && noticeText) {
+          noticeText.textContent = `Selected: ${serviceName}`;
+          notice.classList.remove("hidden");
+        }
+        const assessmentSection = document.getElementById("assessment");
+        if (assessmentSection) {
+          assessmentSection.scrollIntoView({ behavior: "smooth" });
+        }
+        setTimeout(() => {
+          const clientName = document.getElementById("clientName");
+          if (clientName) clientName.focus();
+        }, 500);
+      }
+
+      // Handle Catalog Form Submission
+      function handleCatalogSubmit(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("clientName").value.trim();
+        const phone = document.getElementById("clientPhone").value.trim();
+        const email = document.getElementById("clientEmail").value.trim();
+        const location = document.getElementById("clientLocation").value.trim();
+        const careFor = document.getElementById("careFor").value;
+        const service = document.getElementById("careService").value;
+        const notes = document.getElementById("careNotes").value.trim();
+
+        const leadData = {
+          date: new Date().toLocaleString(),
+          name,
+          phone,
+          email,
+          location,
+          careFor,
+          service,
+          notes,
+          source: "Grace Harbour Services Catalog V2"
+        };
+
+        // Backup to localStorage
+        try {
+          const leads = JSON.parse(localStorage.getItem("grace_harbour_leads") || "[]");
+          leads.push(leadData);
+          localStorage.setItem("grace_harbour_leads", JSON.stringify(leads));
+        } catch (err) {
+          console.warn("Storage warning:", err);
+        }
+
+        // Show inline success view
+        document.getElementById("catalogAssessmentForm").classList.add("hidden");
+        document.getElementById("formSuccessView").classList.remove("hidden");
+        if (window.lucide) lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
+
