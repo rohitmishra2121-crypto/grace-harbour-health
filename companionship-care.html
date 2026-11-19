@@ -234,7 +234,7 @@
             />
           </a>
 
-                    <!-- Desktop Navigation with Services Dropdown -->
+                              <!-- Desktop Navigation with Services Dropdown -->
           <nav class="hidden min-[1150px]:flex items-center gap-7 text-sm font-semibold text-slate-700">
             <!-- Services Dropdown Menu -->
             <div class="relative group py-2">
@@ -270,7 +270,7 @@
                     </span>
                   </a>
 
-                  <!-- Individual Service Pages -->
+                  <!-- Individual Service Pages (All 7 Dedicated Pages) -->
                   <div class="space-y-0.5">
                     <!-- 1. Personal Care -->
                     <a
@@ -289,7 +289,7 @@
                     <!-- 2. Companionship -->
                     <a
                       href="companionship-care.html"
-                      class="flex items-start gap-3 p-2 rounded-xl bg-slate-100/90 font-bold transition-colors group/item"
+                      class="flex items-start gap-3 p-2 rounded-xl bg-slate-100 font-bold transition-colors group/item"
                     >
                       <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-amber-600 group-hover/item:text-white transition-colors">
                         <i data-lucide="coffee" class="w-4 h-4"></i>
@@ -344,7 +344,7 @@
 
                     <!-- 6. Medication Reminders -->
                     <a
-                      href="services.html#medication"
+                      href="medication-reminders.html"
                       class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
                     >
                       <div class="w-8 h-8 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-purple-600 group-hover/item:text-white transition-colors">
@@ -358,15 +358,15 @@
 
                     <!-- 7. Overnight & 24/7 Care -->
                     <a
-                      href="services.html#live-in-care"
+                      href="overnight-24-7-care.html"
                       class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
                     >
-                      <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-harbour group-hover/item:text-white transition-colors">
+                      <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-900 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-indigo-900 group-hover/item:text-white transition-colors">
                         <i data-lucide="moon" class="w-4 h-4"></i>
                       </div>
                       <div class="flex-1 min-w-0">
                         <div class="text-sm font-bold text-harbour group-hover/item:text-coral transition-colors">Overnight &amp; 24/7 Care</div>
-                        <div class="text-xs text-slate-500 truncate">Continuous safety, night assistance &amp; live-in options</div>
+                        <div class="text-xs text-slate-500 truncate">Awake night monitoring &amp; 24/7 live-in support</div>
                       </div>
                     </a>
                   </div>
@@ -417,7 +417,7 @@
           </button>
         </div>
 
-                <!-- Mobile Drawer Menu -->
+                        <!-- Mobile Drawer Menu -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -451,10 +451,10 @@
               <a href="household-meal-prep.html" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
                 Household &amp; Meal Prep
               </a>
-              <a href="services.html#medication" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              <a href="medication-reminders.html" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
                 Medication Reminders
               </a>
-              <a href="services.html#live-in-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              <a href="overnight-24-7-care.html" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
                 Overnight &amp; 24/7 Care
               </a>
             </div>
@@ -1340,18 +1340,20 @@
           </div>
 
           <!-- Services Column (Col 5-7) -->
+                                <!-- Services Column -->
           <div class="lg:col-span-3 space-y-4">
             <div class="text-xs font-bold uppercase tracking-wider text-sage-200">
               Care Services
             </div>
             <ul class="space-y-3 text-sm">
               <li><a href="personal-care.html" class="hover:text-white transition-colors">Personal Care &amp; Hygiene</a></li>
-              <li><a href="companionship-care.html" class="text-coral-300 font-semibold hover:text-white transition-colors">Companionship &amp; Social Support</a></li>
+              <li><a href="companionship-care.html" class="hover:text-white transition-colors">Companionship &amp; Social Support</a></li>
               <li><a href="post-hospital-care.html" class="hover:text-white transition-colors">Post-Hospital Recovery Care</a></li>
               <li><a href="respite-care.html" class="hover:text-white transition-colors">Family Respite Relief</a></li>
               <li><a href="household-meal-prep.html" class="hover:text-white transition-colors">Household Support &amp; Meal Prep</a></li>
-              <li><a href="services.html#medication" class="hover:text-white transition-colors">Medication Reminders</a></li>
-              <li><a href="services.html" class="hover:text-white transition-colors">All Services Overview &rarr;</a></li>
+              <li><a href="medication-reminders.html" class="hover:text-white transition-colors">Medication Reminders</a></li>
+              <li><a href="overnight-24-7-care.html" class="hover:text-white transition-colors">Overnight &amp; 24/7 Care</a></li>
+              <li><a href="services.html" class="hover:text-white font-semibold transition-colors">All Services Overview &rarr;</a></li>
             </ul>
           </div>
 
