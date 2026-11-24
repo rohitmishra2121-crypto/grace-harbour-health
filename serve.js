@@ -23,24 +23,51 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   try {
     let reqUrl = decodeURI(req.url.split('?')[0]);
-    if (reqUrl === '/') reqUrl = '/index.html';
+
+    // 1. Redirect /index.html to clean root /
+    if (reqUrl === '/index.html') {
+      res.writeHead(301, { 'Location': '/' });
+      res.end();
+      return;
+    }
+
+    // 2. Redirect *.html to clean URL (e.g. /services.html -> /services)
+    if (reqUrl.endsWith('.html')) {
+      const cleanUrl = reqUrl.slice(0, -5);
+      res.writeHead(301, { 'Location': cleanUrl });
+      res.end();
+      return;
+    }
+
+    // 3. Normalize trailing slashes on clean page routes (e.g. /services/ -> /services)
+    if (reqUrl.length > 1 && reqUrl.endsWith('/')) {
+      const trimmed = reqUrl.slice(0, -1);
+      if (fs.existsSync(path.join(ROOT, trimmed + '.html'))) {
+        res.writeHead(301, { 'Location': trimmed });
+        res.end();
+        return;
+      }
+    }
 
     let filePath = path.join(ROOT, reqUrl);
 
-    // 1. If directory, look for index.html
-    if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+    // 4. Root / serves index.html
+    if (reqUrl === '/') {
+      filePath = path.join(ROOT, 'index.html');
+    }
+    // 5. Clean URLs support: if /services requested, serve /services.html
+    else if (!fs.existsSync(filePath) && fs.existsSync(filePath + '.html')) {
+      filePath = filePath + '.html';
+    }
+    // 6. If directory, look for index.html
+    else if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
       const indexFile = path.join(filePath, 'index.html');
       if (fs.existsSync(indexFile)) {
         filePath = indexFile;
       }
     }
 
-    // 2. Clean URLs support: if /service requested, look for /service.html
-    if (!fs.existsSync(filePath) && fs.existsSync(filePath + '.html')) {
-      filePath = filePath + '.html';
-    }
-
-    // 3. Fallback: public directory if exists
+    // 7. Fallback: public directory if exists
     if (!fs.existsSync(filePath)) {
       const publicPath = path.join(ROOT, 'public', reqUrl);
       if (fs.existsSync(publicPath) && !fs.statSync(publicPath).isDirectory()) {
