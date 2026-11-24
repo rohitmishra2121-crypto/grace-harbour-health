@@ -584,94 +584,189 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Pillar 1: Seniors Aging in Place -->
-          <div class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-slate-300 transition-all flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="w-12 h-12 rounded-xl bg-harbour-50 text-harbour flex items-center justify-center">
-                <i data-lucide="home" class="w-6 h-6"></i>
+          <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-harbour-900">
+                <img
+                  src="images/caregiver-walker-support.webp"
+                  alt="Grace Harbour caregiver supporting senior woman with walker safely at home"
+                  class="card-zoom-img w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/95 text-harbour text-xs font-bold shadow-xs">
+                  Aging in Place
+                </span>
+                <div class="absolute bottom-3 left-4 text-white font-serif text-lg font-bold">
+                  Independence at Home
+                </div>
               </div>
-              <h3 class="font-serif text-xl font-bold text-harbour">Seniors Wishing to Age in Place</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Older adults who cherish their home environment and want to remain independent, active, and safe without the stress or disruption of moving into an institution.
-              </p>
+              <div class="p-6 space-y-3">
+                <h3 class="font-serif text-xl font-bold text-harbour">Seniors Wishing to Age in Place</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Older adults who cherish their home environment and want to remain independent, active, and safe without the stress or disruption of moving into a facility.
+                </p>
+                <ul class="text-xs text-slate-700 space-y-1.5 pt-2 border-t border-gray-100">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Daily routine &amp; mobility assistance</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-sage"></i> Non-slip checks &amp; fall prevention</li>
+                </ul>
+              </div>
             </div>
-            <div class="pt-6 mt-6 border-t border-slate-100">
-              <a href="personal-care" class="inline-flex items-center gap-1.5 text-xs font-bold text-coral hover:text-coral-600">
-                Personal Care Support &rarr;
+            <div class="p-6 pt-0">
+              <a href="personal-care" class="text-xs font-bold text-coral group-hover:text-harbour transition-colors flex items-center gap-1">
+                <span>Personal Care Support</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 2: Post-Hospital Recovery -->
-          <div class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-slate-300 transition-all flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
-                <i data-lucide="activity" class="w-6 h-6"></i>
+          <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-harbour-900">
+                <img
+                  src="images/recovery-health-vitals.webp"
+                  alt="Caregiver monitoring vitals and comfort for client recovering at home"
+                  class="card-zoom-img w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/95 text-blue-900 text-xs font-bold shadow-xs">
+                  Post-Hospital
+                </span>
+                <div class="absolute bottom-3 left-4 text-white font-serif text-lg font-bold">
+                  Transitional Discharge Care
+                </div>
               </div>
-              <h3 class="font-serif text-xl font-bold text-harbour">Individuals Recovering After Discharge</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Patients transitioning back home from hospital stay, orthopedic surgery, or cardiac recovery requiring short-term mobility help, meals, and readmission prevention.
-              </p>
+              <div class="p-6 space-y-3">
+                <h3 class="font-serif text-xl font-bold text-harbour">Individuals Recovering After Discharge</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Patients transitioning back home from hospital stay, surgery, or illness requiring short-term mobility help, meals, and readmission prevention.
+                </p>
+                <ul class="text-xs text-slate-700 space-y-1.5 pt-2 border-t border-gray-100">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Medication reminders &amp; hydration</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Gentle rehab &amp; discharge compliance</li>
+                </ul>
+              </div>
             </div>
-            <div class="pt-6 mt-6 border-t border-slate-100">
-              <a href="post-hospital-care" class="inline-flex items-center gap-1.5 text-xs font-bold text-coral hover:text-coral-600">
-                Transitional Recovery Care &rarr;
+            <div class="p-6 pt-0">
+              <a href="post-hospital-care" class="text-xs font-bold text-blue-800 group-hover:text-harbour transition-colors flex items-center gap-1">
+                <span>Transitional Recovery Care</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 3: Families Supporting Loved Ones -->
-          <div class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-slate-300 transition-all flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center">
-                <i data-lucide="users" class="w-6 h-6"></i>
+          <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-harbour-900">
+                <img
+                  src="images/companionship-friendship.webp"
+                  alt="Warm companion moment between caregiver and senior sharing laughter"
+                  class="card-zoom-img w-full h-full object-cover object-[50%_25%]"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/95 text-rose-900 text-xs font-bold shadow-xs">
+                  Family Partnership
+                </span>
+                <div class="absolute bottom-3 left-4 text-white font-serif text-lg font-bold">
+                  Daily Peace of Mind
+                </div>
               </div>
-              <h3 class="font-serif text-xl font-bold text-harbour">Families Supporting Loved Ones at Home</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Adult children and spouses balancing careers and personal lives who need a dependable, vetted caregiving partner they can trust with daily updates and reliable schedules.
-              </p>
+              <div class="p-6 space-y-3">
+                <h3 class="font-serif text-xl font-bold text-harbour">Families Supporting Loved Ones at Home</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Adult children and spouses balancing careers and personal lives who need a dependable, vetted caregiving partner with daily updates and reliable schedules.
+                </p>
+                <ul class="text-xs text-slate-700 space-y-1.5 pt-2 border-t border-gray-100">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> Timestamped shift visit reports</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> Consistent faces &amp; reliable times</li>
+                </ul>
+              </div>
             </div>
-            <div class="pt-6 mt-6 border-t border-slate-100">
-              <a href="companionship-care" class="inline-flex items-center gap-1.5 text-xs font-bold text-coral hover:text-coral-600">
-                Companionship &amp; Caregiving &rarr;
+            <div class="p-6 pt-0">
+              <a href="companionship-care" class="text-xs font-bold text-rose-800 group-hover:text-harbour transition-colors flex items-center gap-1">
+                <span>Companionship &amp; Caregiving</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
           </div>
 
           <!-- Pillar 4: Newcomers & Immigrant Families -->
-          <div class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-slate-300 transition-all flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center">
-                <i data-lucide="globe" class="w-6 h-6"></i>
+          <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-harbour-900">
+                <img
+                  src="images/consultation-care-plan.webp"
+                  alt="Caregiver reviewing culturally responsive care plan with client"
+                  class="card-zoom-img w-full h-full object-cover object-center"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/95 text-amber-900 text-xs font-bold shadow-xs">
+                  Cultural Care
+                </span>
+                <div class="absolute bottom-3 left-4 text-white font-serif text-lg font-bold">
+                  Respectful &amp; Responsive
+                </div>
               </div>
-              <h3 class="font-serif text-xl font-bold text-harbour">Newcomers &amp; Immigrant Families</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Families seeking culturally responsive, respectful care that honors specific linguistic, dietary, and cultural traditions with empathy, understanding, and dignity.
-              </p>
+              <div class="p-6 space-y-3">
+                <h3 class="font-serif text-xl font-bold text-harbour">Newcomers &amp; Immigrant Families</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Families seeking culturally responsive, respectful care that honors specific linguistic, dietary, and cultural traditions with empathy, understanding, and dignity.
+                </p>
+                <ul class="text-xs text-slate-700 space-y-1.5 pt-2 border-t border-gray-100">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Dietary &amp; cultural preference matching</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Multilingual and inclusive caregivers</li>
+                </ul>
+              </div>
             </div>
-            <div class="pt-6 mt-6 border-t border-slate-100">
-              <span class="inline-flex items-center gap-1.5 text-xs font-bold text-sage">
-                <i data-lucide="check" class="w-3.5 h-3.5"></i> Culturally Responsive Matching
+            <div class="p-6 pt-0">
+              <span class="text-xs font-bold text-amber-800 flex items-center gap-1">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-sage"></i>
+                <span>Culturally Responsive Matching</span>
               </span>
             </div>
           </div>
 
           <!-- Pillar 5: Family Caregivers Needing Respite -->
-          <div class="p-7 rounded-2xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-slate-300 transition-all flex flex-col justify-between lg:col-span-2">
-            <div class="space-y-4">
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
-                <i data-lucide="sun" class="w-6 h-6"></i>
+          <div class="service-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-soft hover:shadow-card transition-all flex flex-col justify-between md:col-span-2 lg:col-span-2">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-harbour-900">
+                <img
+                  src="images/respite-caregiver-relief.webp"
+                  alt="Caregiver reassuring senior, providing family caregiver with restorative relief"
+                  class="card-zoom-img w-full h-full object-cover object-[50%_20%]"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-harbour/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/95 text-emerald-900 text-xs font-bold shadow-xs">
+                  Respite Relief
+                </span>
+                <div class="absolute bottom-3 left-4 text-white font-serif text-lg font-bold">
+                  Caregiver Burnout Prevention
+                </div>
               </div>
-              <h3 class="font-serif text-xl font-bold text-harbour">Caregivers Needing Short-Term or Ongoing Relief</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Dedicated family caregivers who give their all every day need time to rest, attend personal appointments, run errands, or take a vacation without guilt, knowing their loved one is in attentive, bonded hands.
-              </p>
+              <div class="p-6 space-y-3">
+                <h3 class="font-serif text-xl font-bold text-harbour">Caregivers Needing Short-Term or Ongoing Relief</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Dedicated family caregivers who give their all every day need time to rest, attend personal appointments, run errands, or take a vacation without guilt, knowing their loved one is in attentive, bonded hands.
+                </p>
+                <ul class="text-xs text-slate-700 space-y-1.5 pt-2 border-t border-gray-100">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Daytime, evening &amp; overnight shift coverage</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Scheduled weekly breaks or on-demand support</li>
+                </ul>
+              </div>
             </div>
-            <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
-              <a href="respite-care" class="inline-flex items-center gap-1.5 text-xs font-bold text-coral hover:text-coral-600">
-                Explore Respite Care Options &rarr;
+            <div class="p-6 pt-0 flex items-center justify-between">
+              <a href="respite-care" class="text-xs font-bold text-coral group-hover:text-harbour transition-colors flex items-center gap-1">
+                <span>Explore Respite Care Options</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
               <span class="text-xs text-slate-500 font-medium">Daytime, Evening &amp; Overnight Shifts</span>
             </div>
