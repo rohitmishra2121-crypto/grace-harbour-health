@@ -105,33 +105,31 @@
   </head>
 
   <body class="font-sans text-slate-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
-    
-    <!-- ═══════════════════════════════════════════
-         TOP ANNOUNCEMENT BAR & VERSION SWITCHER
-    ═══════════════════════════════════════════ -->
+    <!-- ══════════════════════════════════════════════
+         TOP ANNOUNCEMENT BAR (PHONE NUMBER LIVES HERE)
+    ══════════════════════════════════════════════ -->
     <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
           <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sage-600/40 text-sage-100 text-xs font-semibold border border-sage-500/50">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Nova Scotia In-Home Care Catalog (V2)
+            Nova Scotia In-Home Care
           </span>
-          <span class="text-slate-200 hidden md:inline text-sm">Accepting New Clients Across Halifax &amp; HRM</span>
+          <span class="text-slate-200 hidden md:inline text-sm">Accepting New Clients • Free In-Home Consultation</span>
         </div>
         <div class="flex items-center gap-4 text-sm font-medium">
-          <a href="services" class="text-xs text-sage-200 hover:text-white underline">View Version 1 Layout</a>
-          <span class="text-white/30 hidden sm:inline">|</span>
           <a href="tel:6043794810" class="flex items-center gap-2 text-white hover:text-coral transition-colors font-semibold">
             <i data-lucide="phone-call" class="w-4 h-4 text-coral"></i>
-            <span>Care Team: <strong>(604) 379-4810</strong></span>
+            <span>Call Our Care Team: <strong>(604) 379-4810</strong></span>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════════
          STICKY NAVIGATION HEADER
-    ═══════════════════════════════════════════ -->
+         (Reduced to 5 nowrap links, no duplicate phone, clean hamburger < 1100px)
+    ══════════════════════════════════════════════ -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex items-center justify-between h-24 sm:h-28">
@@ -144,13 +142,13 @@
             />
           </a>
 
-                              <!-- Desktop Navigation with Services Dropdown -->
+          <!-- Desktop Navigation with Services Dropdown -->
           <nav class="hidden min-[1150px]:flex items-center gap-7 text-sm font-semibold text-slate-700">
             <!-- Services Dropdown Menu -->
             <div class="relative group py-2">
               <a
                 href="services"
-                class="inline-flex items-center gap-1.5 py-1 text-harbour font-bold border-b-2 border-coral transition-colors"
+                class="inline-flex items-center gap-1.5 py-1 text-slate-700 hover:text-harbour font-semibold transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -284,7 +282,7 @@
                   <!-- Bottom Strip -->
                   <div class="mt-2 pt-2.5 border-t border-gray-100 px-2 flex items-center justify-between text-xs text-slate-600">
                     <span class="font-medium text-slate-500">Customized Care Plans &bull; Bonded &amp; Insured</span>
-                    <a href="./#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
+                    <a href="#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
                       Free Assessment &rarr;
                     </a>
                   </div>
@@ -298,7 +296,7 @@
             <a href="contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
           </nav>
 
-          <!-- Single Header CTA Button -->
+          <!-- Single Header CTA Button (No duplicate phone) -->
           <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
             <a
               href="#assessment"
@@ -309,7 +307,7 @@
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle (< 1100px) -->
+          <!-- Mobile Hamburger Toggle (< 1150px) -->
           <button
             id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
@@ -321,7 +319,7 @@
           </button>
         </div>
 
-                        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Menu Drawer (< 1150px) -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -366,9 +364,15 @@
 
           <!-- Company / Info Links -->
           <div class="pt-2 border-t border-gray-100 space-y-1">
-            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm text-slate-700 hover:text-harbour rounded-lg">About Us</a>
-            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm text-slate-700 hover:text-harbour rounded-lg">Careers &amp; Open Roles</a>
-            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm text-slate-700 hover:text-harbour rounded-lg">Contact Us</a>
+            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              About Us
+            </a>
+            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Careers &amp; Open Roles
+            </a>
+            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Contact Us
+            </a>
           </div>
 
           <!-- Mobile CTAs -->
@@ -1383,14 +1387,10 @@
               Quick Links
             </div>
             <ul class="space-y-3 text-sm">
-              <li><a href="about" class="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="careers" class="hover:text-white transition-colors">Careers &amp; Opportunities</a></li>
-              <li><a href="contact" class="hover:text-white transition-colors">Contact Us</a></li>
               <li><a href="./#approach" class="hover:text-white transition-colors">How It Works</a></li>
               <li><a href="./#why-us" class="hover:text-white transition-colors">Why Grace Harbour</a></li>
               <li><a href="./#testimonials" class="hover:text-white transition-colors">Family Testimonials</a></li>
-              <li><a href="#faq" class="hover:text-white transition-colors">FAQs</a></li>
-              <li><a href="privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="./#assessment" class="hover:text-white font-semibold text-coral transition-colors">Free In-Home Assessment</a></li>
             </ul>
           </div>
 
@@ -1424,7 +1424,7 @@
         <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
           <p>© 2026 Grace Harbour Home Health Inc. All rights reserved. Nova Scotia, Canada.</p>
           <div class="flex items-center gap-6">
-            <a href="privacy-policy" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+            <a href="#assessment" class="hover:text-gray-300 transition-colors">Free Assessment</a>
             <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
             <a href="tel:6043794810" class="hover:text-coral font-bold">24/7 Care Intake: (604) 379-4810</a>
           </div>

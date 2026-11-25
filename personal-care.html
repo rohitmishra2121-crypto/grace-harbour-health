@@ -182,10 +182,9 @@
   </head>
 
   <body class="font-sans text-slate-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
-    
-    <!-- ═══════════════════════════════════════════
-         TOP ANNOUNCEMENT BAR
-    ═══════════════════════════════════════════ -->
+    <!-- ══════════════════════════════════════════════
+         TOP ANNOUNCEMENT BAR (PHONE NUMBER LIVES HERE)
+    ══════════════════════════════════════════════ -->
     <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
@@ -204,9 +203,10 @@
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════════
          STICKY NAVIGATION HEADER
-    ═══════════════════════════════════════════ -->
+         (Reduced to 5 nowrap links, no duplicate phone, clean hamburger < 1100px)
+    ══════════════════════════════════════════════ -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex items-center justify-between h-24 sm:h-28">
@@ -219,13 +219,13 @@
             />
           </a>
 
-                              <!-- Desktop Navigation with Services Dropdown -->
+          <!-- Desktop Navigation with Services Dropdown -->
           <nav class="hidden min-[1150px]:flex items-center gap-7 text-sm font-semibold text-slate-700">
             <!-- Services Dropdown Menu -->
             <div class="relative group py-2">
               <a
                 href="services"
-                class="inline-flex items-center gap-1.5 py-1 text-harbour font-bold hover:text-harbour transition-colors"
+                class="inline-flex items-center gap-1.5 py-1 text-slate-700 hover:text-harbour font-semibold transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -260,7 +260,7 @@
                     <!-- 1. Personal Care -->
                     <a
                       href="personal-care"
-                      class="flex items-start gap-3 p-2 rounded-xl bg-slate-100 font-bold transition-colors group/item"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
                     >
                       <div class="w-8 h-8 rounded-lg bg-sage-50 text-sage flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-sage group-hover/item:text-white transition-colors">
                         <i data-lucide="heart" class="w-4 h-4"></i>
@@ -359,7 +359,7 @@
                   <!-- Bottom Strip -->
                   <div class="mt-2 pt-2.5 border-t border-gray-100 px-2 flex items-center justify-between text-xs text-slate-600">
                     <span class="font-medium text-slate-500">Customized Care Plans &bull; Bonded &amp; Insured</span>
-                    <a href="./#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
+                    <a href="#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
                       Free Assessment &rarr;
                     </a>
                   </div>
@@ -373,7 +373,7 @@
             <a href="contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
           </nav>
 
-          <!-- Single Header CTA Button -->
+          <!-- Single Header CTA Button (No duplicate phone) -->
           <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
             <a
               href="#assessment"
@@ -384,7 +384,7 @@
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle (< 1100px) -->
+          <!-- Mobile Hamburger Toggle (< 1150px) -->
           <button
             id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
@@ -396,7 +396,7 @@
           </button>
         </div>
 
-                        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Menu Drawer (< 1150px) -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -415,7 +415,7 @@
               <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
             </a>
             <div class="pl-2 space-y-1 border-l-2 border-slate-100 ml-3 pt-1">
-              <a href="personal-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-bold bg-linen text-harbour rounded-lg">
+              <a href="personal-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
                 Personal Care &amp; Hygiene
               </a>
               <a href="companionship-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
@@ -441,7 +441,16 @@
 
           <!-- Company / Info Links -->
           <div class="pt-2 border-t border-gray-100 space-y-1">
-            </div>
+            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              About Us
+            </a>
+            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Careers &amp; Open Roles
+            </a>
+            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Contact Us
+            </a>
+          </div>
 
           <!-- Mobile CTAs -->
           <div class="pt-2 border-t border-gray-100 space-y-2">
@@ -455,6 +464,8 @@
         </div>
       </div>
     </header>
+
+
 
     <main>
       <!-- ═══════════════════════════════════════════
@@ -1315,15 +1326,19 @@
 
       // Mobile Menu Toggle
       function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        const openIcon = document.getElementById("menuOpenIcon");
-        const closeIcon = document.getElementById("menuCloseIcon");
-        if (menu) {
-          menu.classList.toggle("hidden");
-          if (openIcon && closeIcon) {
-            openIcon.classList.toggle("hidden");
-            closeIcon.classList.toggle("hidden");
-          }
+      const menu = document.getElementById("mobileMenu");
+      const openIcon = document.getElementById("menuOpenIcon");
+      const closeIcon = document.getElementById("menuCloseIcon");
+      if (menu) {
+        menu.classList.toggle("hidden");
+        if (openIcon && closeIcon) {
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
+        }
+      }
+    }
+      }
+    }
         }
       }
 

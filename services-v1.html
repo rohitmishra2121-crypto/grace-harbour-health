@@ -195,10 +195,9 @@
   </head>
 
   <body class="font-sans text-slate-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
-    
-    <!-- ═══════════════════════════════════════════
-         TOP ANNOUNCEMENT BAR
-    ═══════════════════════════════════════════ -->
+    <!-- ══════════════════════════════════════════════
+         TOP ANNOUNCEMENT BAR (PHONE NUMBER LIVES HERE)
+    ══════════════════════════════════════════════ -->
     <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
@@ -217,28 +216,29 @@
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════════
          STICKY NAVIGATION HEADER
-    ═══════════════════════════════════════════ -->
+         (Reduced to 5 nowrap links, no duplicate phone, clean hamburger < 1100px)
+    ══════════════════════════════════════════════ -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div class="flex items-center justify-between h-20">
+        <div class="flex items-center justify-between h-24 sm:h-28">
           <!-- Logo -->
-          <a href="/" class="flex items-center group flex-shrink-0" aria-label="Grace Harbour Home Health Homepage">
+          <a href="./" class="flex items-center group flex-shrink-0" aria-label="Grace Harbour Home Health Homepage">
             <img
               src="images/grace-harbour-logo.webp"
               alt="Grace Harbour Home Health"
-              class="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105"
+              class="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-transform group-hover:scale-105"
             />
           </a>
 
-                              <!-- Desktop Navigation with Services Dropdown -->
+          <!-- Desktop Navigation with Services Dropdown -->
           <nav class="hidden min-[1150px]:flex items-center gap-7 text-sm font-semibold text-slate-700">
             <!-- Services Dropdown Menu -->
             <div class="relative group py-2">
               <a
                 href="services"
-                class="inline-flex items-center gap-1.5 py-1 text-harbour font-bold border-b-2 border-coral transition-colors"
+                class="inline-flex items-center gap-1.5 py-1 text-slate-700 hover:text-harbour font-semibold transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -371,8 +371,8 @@
 
                   <!-- Bottom Strip -->
                   <div class="mt-2 pt-2.5 border-t border-gray-100 px-2 flex items-center justify-between text-xs text-slate-600">
-                    <span class="font-medium text-slate-500">Transparent $32&ndash;$40/hr &bull; Bonded &amp; Insured</span>
-                    <a href="./#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
+                    <span class="font-medium text-slate-500">Customized Care Plans &bull; Bonded &amp; Insured</span>
+                    <a href="#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
                       Free Assessment &rarr;
                     </a>
                   </div>
@@ -380,14 +380,13 @@
               </div>
             </div>
 
-            <!-- Standard Top Links -->
-            <a href="./#approach" class="whitespace-nowrap hover:text-harbour transition-colors py-2">How It Works</a>
-            <a href="./#why-us" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Why Us</a>
-            <a href="./#testimonials" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Reviews</a>
-            <a href="./#faq" class="whitespace-nowrap hover:text-harbour transition-colors py-2">FAQs</a>
+            <!-- Main Top Navigation Links -->
+            <a href="about" class="whitespace-nowrap hover:text-harbour transition-colors py-2">About Us</a>
+            <a href="careers" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Careers</a>
+            <a href="contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
           </nav>
 
-          <!-- Single Header CTA Button -->
+          <!-- Single Header CTA Button (No duplicate phone) -->
           <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
             <a
               href="#assessment"
@@ -398,11 +397,11 @@
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle (< 1100px) -->
+          <!-- Mobile Hamburger Toggle (< 1150px) -->
           <button
             id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
-            class="min-[1100px]:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
+            class="min-[1150px]:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
             aria-label="Toggle navigation"
           >
             <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
@@ -410,7 +409,7 @@
           </button>
         </div>
 
-                        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Menu Drawer (< 1150px) -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -455,10 +454,15 @@
 
           <!-- Company / Info Links -->
           <div class="pt-2 border-t border-gray-100 space-y-1">
-            <a href="./#approach" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm hover:bg-linen rounded-lg">How It Works</a>
-            <a href="./#why-us" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm hover:bg-linen rounded-lg">Why Us</a>
-            <a href="./#testimonials" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm hover:bg-linen rounded-lg">Reviews</a>
-            <a href="./#faq" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm hover:bg-linen rounded-lg">FAQs</a>
+            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              About Us
+            </a>
+            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Careers &amp; Open Roles
+            </a>
+            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Contact Us
+            </a>
           </div>
 
           <!-- Mobile CTAs -->
@@ -473,6 +477,8 @@
         </div>
       </div>
     </header>
+
+
 
     <main>
       <!-- ═══════════════════════════════════════════
@@ -1602,15 +1608,19 @@
 
       // Mobile Menu Toggle
       function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        const openIcon = document.getElementById("menuOpenIcon");
-        const closeIcon = document.getElementById("menuCloseIcon");
-        if (menu) {
-          menu.classList.toggle("hidden");
-          if (openIcon && closeIcon) {
-            openIcon.classList.toggle("hidden");
-            closeIcon.classList.toggle("hidden");
-          }
+      const menu = document.getElementById("mobileMenu");
+      const openIcon = document.getElementById("menuOpenIcon");
+      const closeIcon = document.getElementById("menuCloseIcon");
+      if (menu) {
+        menu.classList.toggle("hidden");
+        if (openIcon && closeIcon) {
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
+        }
+      }
+    }
+      }
+    }
         }
       }
 

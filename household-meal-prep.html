@@ -191,33 +191,32 @@
   </head>
 
   <body class="font-sans text-slate-800 bg-linen antialiased selection:bg-sage/20 selection:text-sage-800">
-    <!-- ═══════════════════════════════════════════
-         ANNOUNCEMENT BAR
-    ═══════════════════════════════════════════ -->
-    <div class="bg-harbour text-white text-xs sm:text-sm py-2.5 px-4 border-b border-harbour-600/30">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- ══════════════════════════════════════════════
+         TOP ANNOUNCEMENT BAR (PHONE NUMBER LIVES HERE)
+    ══════════════════════════════════════════════ -->
+    <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
-          <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-600 text-white tracking-wide uppercase">
-            Nutrition &amp; Home Safety
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sage-600/40 text-sage-100 text-xs font-semibold border border-sage-500/50">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Nova Scotia In-Home Care
           </span>
-          <span class="hidden md:inline text-slate-200">
-            Fresh Home-Cooked Senior Meals &amp; Housekeeping across Halifax, Dartmouth, Bedford &amp; HRM.
-          </span>
-          <span class="md:hidden text-slate-200 font-medium">Household &amp; Meal Prep Support</span>
+          <span class="text-slate-200 hidden md:inline text-sm">Accepting New Clients • Free In-Home Consultation</span>
         </div>
-        <div class="flex items-center gap-4 text-xs font-medium">
-          <a href="tel:6043794810" class="flex items-center gap-1.5 text-white hover:text-coral transition-colors font-semibold">
-            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-coral"></i>
-            <span>(604) 379-4810</span>
+        <div class="flex items-center gap-4 text-sm font-medium">
+          <a href="tel:6043794810" class="flex items-center gap-2 text-white hover:text-coral transition-colors font-semibold">
+            <i data-lucide="phone-call" class="w-4 h-4 text-coral"></i>
+            <span>Call Our Care Team: <strong>(604) 379-4810</strong></span>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════
-         STICKY HEADER & NAVIGATION
-    ═══════════════════════════════════════════ -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-200">
+    <!-- ══════════════════════════════════════════════
+         STICKY NAVIGATION HEADER
+         (Reduced to 5 nowrap links, no duplicate phone, clean hamburger < 1100px)
+    ══════════════════════════════════════════════ -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex items-center justify-between h-24 sm:h-28">
           <!-- Logo -->
@@ -229,13 +228,13 @@
             />
           </a>
 
-                              <!-- Desktop Navigation with Services Dropdown -->
+          <!-- Desktop Navigation with Services Dropdown -->
           <nav class="hidden min-[1150px]:flex items-center gap-7 text-sm font-semibold text-slate-700">
             <!-- Services Dropdown Menu -->
             <div class="relative group py-2">
               <a
                 href="services"
-                class="inline-flex items-center gap-1.5 py-1 text-harbour font-bold hover:text-harbour transition-colors"
+                class="inline-flex items-center gap-1.5 py-1 text-slate-700 hover:text-harbour font-semibold transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -326,7 +325,7 @@
                     <!-- 5. Household & Meal Prep -->
                     <a
                       href="household-meal-prep"
-                      class="flex items-start gap-3 p-2 rounded-xl bg-slate-100 font-bold transition-colors group/item"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
                     >
                       <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-emerald-600 group-hover/item:text-white transition-colors">
                         <i data-lucide="utensils" class="w-4 h-4"></i>
@@ -369,7 +368,7 @@
                   <!-- Bottom Strip -->
                   <div class="mt-2 pt-2.5 border-t border-gray-100 px-2 flex items-center justify-between text-xs text-slate-600">
                     <span class="font-medium text-slate-500">Customized Care Plans &bull; Bonded &amp; Insured</span>
-                    <a href="./#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
+                    <a href="#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
                       Free Assessment &rarr;
                     </a>
                   </div>
@@ -383,35 +382,30 @@
             <a href="contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
           </nav>
 
-          <!-- Desktop CTA -->
-          <div class="hidden sm:flex items-center gap-3">
-            <a
-              href="tel:6043794810"
-              class="hidden lg:flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold text-harbour hover:bg-harbour-50 transition-colors"
-            >
-              <i data-lucide="phone" class="w-4 h-4 text-amber-600"></i>
-              <span>(604) 379-4810</span>
-            </a>
+          <!-- Single Header CTA Button (No duplicate phone) -->
+          <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
             <a
               href="#assessment"
-              class="px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow-sm transition-all hover:shadow"
+              class="bg-coral hover:bg-coral-600 text-white font-semibold text-sm sm:text-base px-5 py-2.5 rounded-lg shadow-sm hover:shadow-glow transition-all flex items-center gap-2 whitespace-nowrap"
             >
-              Book Meal Consultation
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              <span>Book Free Assessment</span>
             </a>
           </div>
 
-          <!-- Mobile Hamburger -->
+          <!-- Mobile Hamburger Toggle (< 1150px) -->
           <button
-            type="button"
+            id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
-            class="min-[1150px]:hidden p-2 text-slate-700 hover:text-harbour rounded-lg focus:outline-none"
-            aria-label="Toggle navigation menu"
+            class="min-[1150px]:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
+            aria-label="Toggle navigation"
           >
-            <i data-lucide="menu" class="w-6 h-6"></i>
+            <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
           </button>
         </div>
 
-                        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Menu Drawer (< 1150px) -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -442,7 +436,7 @@
               <a href="respite-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
                 Respite Care for Families
               </a>
-              <a href="household-meal-prep" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-bold bg-linen text-harbour rounded-lg">
+              <a href="household-meal-prep" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
                 Household &amp; Meal Prep
               </a>
               <a href="medication-reminders" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
@@ -456,7 +450,16 @@
 
           <!-- Company / Info Links -->
           <div class="pt-2 border-t border-gray-100 space-y-1">
-            </div>
+            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              About Us
+            </a>
+            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Careers &amp; Open Roles
+            </a>
+            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Contact Us
+            </a>
+          </div>
 
           <!-- Mobile CTAs -->
           <div class="pt-2 border-t border-gray-100 space-y-2">
@@ -470,6 +473,8 @@
         </div>
       </div>
     </header>
+
+
 
     <!-- ═══════════════════════════════════════════
          HERO SECTION
@@ -1323,10 +1328,19 @@
 
       // Toggle Mobile Menu
       function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        if (menu) {
-          menu.classList.toggle("hidden");
+      const menu = document.getElementById("mobileMenu");
+      const openIcon = document.getElementById("menuOpenIcon");
+      const closeIcon = document.getElementById("menuCloseIcon");
+      if (menu) {
+        menu.classList.toggle("hidden");
+        if (openIcon && closeIcon) {
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
         }
+      }
+    }
+      }
+    }
       }
 
       // Prefill Service

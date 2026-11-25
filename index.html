@@ -127,7 +127,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex items-center justify-between h-24 sm:h-28">
           <!-- Logo -->
-          <a href="#" class="flex items-center group flex-shrink-0" aria-label="Grace Harbour Home Health Homepage">
+          <a href="./" class="flex items-center group flex-shrink-0" aria-label="Grace Harbour Home Health Homepage">
             <img
               src="images/grace-harbour-logo.webp"
               alt="Grace Harbour Home Health"
@@ -135,7 +135,7 @@
             />
           </a>
 
-                              <!-- Desktop Navigation with Services Dropdown -->
+          <!-- Desktop Navigation with Services Dropdown -->
           <nav class="hidden min-[1150px]:flex items-center gap-7 text-sm font-semibold text-slate-700">
             <!-- Services Dropdown Menu -->
             <div class="relative group py-2">
@@ -300,7 +300,7 @@
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle (< 1100px) -->
+          <!-- Mobile Hamburger Toggle (< 1150px) -->
           <button
             id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
@@ -312,7 +312,7 @@
           </button>
         </div>
 
-                        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Menu Drawer (< 1150px) -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -357,7 +357,16 @@
 
           <!-- Company / Info Links -->
           <div class="pt-2 border-t border-gray-100 space-y-1">
-            </div>
+            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              About Us
+            </a>
+            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Careers &amp; Open Roles
+            </a>
+            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Contact Us
+            </a>
+          </div>
 
           <!-- Mobile CTAs -->
           <div class="pt-2 border-t border-gray-100 space-y-2">
@@ -371,6 +380,8 @@
         </div>
       </div>
     </header>
+
+
 
     <!-- ══════════════════════════════════════════════
          HERO SECTION
@@ -1608,15 +1619,19 @@
 
       // Mobile Menu Toggle
       function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        const openIcon = document.getElementById("menuOpenIcon");
-        const closeIcon = document.getElementById("menuCloseIcon");
-        if (menu) {
-          menu.classList.toggle("hidden");
-          if (openIcon && closeIcon) {
-            openIcon.classList.toggle("hidden");
-            closeIcon.classList.toggle("hidden");
-          }
+      const menu = document.getElementById("mobileMenu");
+      const openIcon = document.getElementById("menuOpenIcon");
+      const closeIcon = document.getElementById("menuCloseIcon");
+      if (menu) {
+        menu.classList.toggle("hidden");
+        if (openIcon && closeIcon) {
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
+        }
+      }
+    }
+      }
+    }
         }
       }
 

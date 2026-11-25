@@ -148,10 +148,9 @@
   </head>
 
   <body class="font-sans text-slate-800 bg-white antialiased selection:bg-sage-100 selection:text-sage-800">
-    
-    <!-- ═══════════════════════════════════════════
-         TOP ANNOUNCEMENT BAR
-    ═══════════════════════════════════════════ -->
+    <!-- ══════════════════════════════════════════════
+         TOP ANNOUNCEMENT BAR (PHONE NUMBER LIVES HERE)
+    ══════════════════════════════════════════════ -->
     <div class="bg-harbour text-white text-sm py-2.5 px-4 border-b border-harbour-600/40">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
@@ -170,9 +169,10 @@
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════════
          STICKY NAVIGATION HEADER
-    ═══════════════════════════════════════════ -->
+         (Reduced to 5 nowrap links, no duplicate phone, clean hamburger < 1100px)
+    ══════════════════════════════════════════════ -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex items-center justify-between h-24 sm:h-28">
@@ -191,7 +191,7 @@
             <div class="relative group py-2">
               <a
                 href="services"
-                class="inline-flex items-center gap-1.5 py-1 text-slate-700 hover:text-harbour transition-colors"
+                class="inline-flex items-center gap-1.5 py-1 text-slate-700 hover:text-harbour font-semibold transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -221,9 +221,13 @@
                     </span>
                   </a>
 
-                  <!-- Individual Service Pages -->
+                  <!-- Individual Service Pages (All 7 Dedicated Pages) -->
                   <div class="space-y-0.5">
-                    <a href="personal-care" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
+                    <!-- 1. Personal Care -->
+                    <a
+                      href="personal-care"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
                       <div class="w-8 h-8 rounded-lg bg-sage-50 text-sage flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-sage group-hover/item:text-white transition-colors">
                         <i data-lucide="heart" class="w-4 h-4"></i>
                       </div>
@@ -233,7 +237,11 @@
                       </div>
                     </a>
 
-                    <a href="companionship-care" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
+                    <!-- 2. Companionship -->
+                    <a
+                      href="companionship-care"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
                       <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-amber-600 group-hover/item:text-white transition-colors">
                         <i data-lucide="coffee" class="w-4 h-4"></i>
                       </div>
@@ -243,7 +251,11 @@
                       </div>
                     </a>
 
-                    <a href="post-hospital-care" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
+                    <!-- 3. Post-Hospital Recovery -->
+                    <a
+                      href="post-hospital-care"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
                       <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-blue-600 group-hover/item:text-white transition-colors">
                         <i data-lucide="activity" class="w-4 h-4"></i>
                       </div>
@@ -253,8 +265,12 @@
                       </div>
                     </a>
 
-                    <a href="respite-care" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
-                      <div class="w-8 h-8 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-rose-600 group-hover/item:text-white transition-colors">
+                    <!-- 4. Respite Care -->
+                    <a
+                      href="respite-care"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
+                      <div class="w-8 h-8 rounded-lg bg-coral-50 text-coral flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-coral group-hover/item:text-white transition-colors">
                         <i data-lucide="sun" class="w-4 h-4"></i>
                       </div>
                       <div class="flex-1 min-w-0">
@@ -263,7 +279,11 @@
                       </div>
                     </a>
 
-                    <a href="household-meal-prep" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
+                    <!-- 5. Household & Meal Prep -->
+                    <a
+                      href="household-meal-prep"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
                       <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-emerald-600 group-hover/item:text-white transition-colors">
                         <i data-lucide="utensils" class="w-4 h-4"></i>
                       </div>
@@ -273,7 +293,11 @@
                       </div>
                     </a>
 
-                    <a href="medication-reminders" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
+                    <!-- 6. Medication Reminders -->
+                    <a
+                      href="medication-reminders"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
                       <div class="w-8 h-8 rounded-lg bg-purple-50 text-purple-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-purple-600 group-hover/item:text-white transition-colors">
                         <i data-lucide="pill" class="w-4 h-4"></i>
                       </div>
@@ -283,7 +307,11 @@
                       </div>
                     </a>
 
-                    <a href="overnight-24-7-care" class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item">
+                    <!-- 7. Overnight & 24/7 Care -->
+                    <a
+                      href="overnight-24-7-care"
+                      class="flex items-start gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors group/item"
+                    >
                       <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-900 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-indigo-900 group-hover/item:text-white transition-colors">
                         <i data-lucide="moon" class="w-4 h-4"></i>
                       </div>
@@ -294,6 +322,7 @@
                     </a>
                   </div>
 
+                  <!-- Bottom Strip -->
                   <div class="mt-2 pt-2.5 border-t border-gray-100 px-2 flex items-center justify-between text-xs text-slate-600">
                     <span class="font-medium text-slate-500">Customized Care Plans &bull; Bonded &amp; Insured</span>
                     <a href="./#assessment" class="font-bold text-coral hover:text-coral-600 flex items-center gap-1">
@@ -305,40 +334,35 @@
             </div>
 
             <!-- Main Top Navigation Links -->
-            <a href="about" class="whitespace-nowrap text-harbour font-bold border-b-2 border-coral transition-colors py-2">About Us</a>
+            <a href="about" class="whitespace-nowrap hover:text-harbour transition-colors py-2">About Us</a>
             <a href="careers" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Careers</a>
             <a href="contact" class="whitespace-nowrap hover:text-harbour transition-colors py-2">Contact</a>
           </nav>
 
-          <!-- Desktop CTA Actions -->
-          <div class="hidden sm:flex items-center gap-3">
+          <!-- Single Header CTA Button (No duplicate phone) -->
+          <div class="hidden sm:flex items-center gap-3 flex-shrink-0">
             <a
-              href="tel:6043794810"
-              class="hidden lg:flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold text-harbour bg-linen hover:bg-linen-100 transition-colors border border-linen-200"
+              href="./#assessment"
+              class="bg-coral hover:bg-coral-600 text-white font-semibold text-sm sm:text-base px-5 py-2.5 rounded-lg shadow-sm hover:shadow-glow transition-all flex items-center gap-2 whitespace-nowrap"
             >
-              <i data-lucide="phone" class="w-3.5 h-3.5 text-coral"></i>
-              <span>(604) 379-4810</span>
-            </a>
-            <a
-              href="contact"
-              class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl font-bold text-xs tracking-wide text-white bg-coral hover:bg-coral-600 transition-all shadow-sm shadow-coral/20 hover:scale-[1.02]"
-            >
-              Contact Us
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              <span>Book Free Assessment</span>
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle -->
+          <!-- Mobile Hamburger Toggle (< 1150px) -->
           <button
-            type="button"
+            id="mobileMenuBtn"
             onclick="toggleMobileMenu()"
-            class="min-[1150px]:hidden p-2 rounded-lg text-slate-700 hover:text-harbour hover:bg-slate-100 transition-colors"
-            aria-label="Toggle navigation menu"
+            class="min-[1150px]:hidden p-2 text-harbour hover:bg-gray-100 rounded-lg focus:outline-none"
+            aria-label="Toggle navigation"
           >
-            <i data-lucide="menu" class="w-6 h-6"></i>
+            <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
           </button>
         </div>
 
-        <!-- Mobile Dropdown Drawer -->
+        <!-- Mobile Menu Drawer (< 1150px) -->
         <div id="mobileMenu" class="hidden min-[1150px]:hidden border-t border-gray-100 py-4 px-3 space-y-3 text-base font-semibold text-slate-700 bg-white">
           <!-- Care Services Section -->
           <div class="space-y-1">
@@ -357,40 +381,57 @@
               <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
             </a>
             <div class="pl-2 space-y-1 border-l-2 border-slate-100 ml-3 pt-1">
-              <a href="personal-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Personal Care &amp; Hygiene</a>
-              <a href="companionship-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Companionship &amp; Social Support</a>
-              <a href="post-hospital-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Post-Hospital Recovery Care</a>
-              <a href="respite-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Family Respite Relief</a>
-              <a href="household-meal-prep" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Household Support &amp; Meal Prep</a>
-              <a href="medication-reminders" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Medication Reminders</a>
-              <a href="overnight-24-7-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-coral">Overnight &amp; 24/7 Care</a>
+              <a href="personal-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Personal Care &amp; Hygiene
+              </a>
+              <a href="companionship-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Companionship &amp; Social Support
+              </a>
+              <a href="post-hospital-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Post-Hospital Recovery Care
+              </a>
+              <a href="respite-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Respite Care for Families
+              </a>
+              <a href="household-meal-prep" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Household &amp; Meal Prep
+              </a>
+              <a href="medication-reminders" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Medication Reminders
+              </a>
+              <a href="overnight-24-7-care" onclick="toggleMobileMenu()" class="block px-3 py-1.5 text-sm font-medium text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+                Overnight &amp; 24/7 Care
+              </a>
             </div>
           </div>
 
-          <!-- Company Links -->
-          <div class="space-y-1 pt-2 border-t border-gray-100">
-            <div class="px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-400">
-              Company
-            </div>
-            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm text-coral font-bold bg-coral-50/50 rounded-lg">About Us</a>
-            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm text-slate-700 hover:text-harbour rounded-lg">Careers &amp; Open Roles</a>
-            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm text-slate-700 hover:text-harbour rounded-lg">Contact Us</a>
-            </div>
+          <!-- Company / Info Links -->
+          <div class="pt-2 border-t border-gray-100 space-y-1">
+            <a href="about" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              About Us
+            </a>
+            <a href="careers" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Careers &amp; Open Roles
+            </a>
+            <a href="contact" onclick="toggleMobileMenu()" class="block px-3 py-2 text-sm font-semibold text-slate-700 hover:text-harbour hover:bg-linen rounded-lg">
+              Contact Us
+            </a>
+          </div>
 
-          <!-- Mobile Action Button -->
-          <div class="pt-2">
-            <a
-              href="contact"
-              onclick="toggleMobileMenu()"
-              class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm text-white bg-coral hover:bg-coral-600 shadow-md transition-all text-center"
-            >
-              <i data-lucide="calendar" class="w-4 h-4"></i>
-              <span>Get in Touch with Our Team</span>
+          <!-- Mobile CTAs -->
+          <div class="pt-2 border-t border-gray-100 space-y-2">
+            <a href="tel:6043794810" class="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-harbour text-white font-bold text-sm">
+              <i data-lucide="phone" class="w-4 h-4"></i> Call (604) 379-4810
+            </a>
+            <a href="./#assessment" onclick="toggleMobileMenu()" class="block text-center w-full py-3 rounded-lg bg-coral text-white font-bold text-sm">
+              Book Free Assessment
             </a>
           </div>
         </div>
       </div>
     </header>
+
+
 
     <!-- ═══════════════════════════════════════════
          BREADCRUMBS
@@ -1070,10 +1111,19 @@
 
       // Mobile Menu Toggle
       function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        if (menu) {
-          menu.classList.toggle("hidden");
+      const menu = document.getElementById("mobileMenu");
+      const openIcon = document.getElementById("menuOpenIcon");
+      const closeIcon = document.getElementById("menuCloseIcon");
+      if (menu) {
+        menu.classList.toggle("hidden");
+        if (openIcon && closeIcon) {
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
         }
+      }
+    }
+      }
+    }
       }
     </script>
   </body>
